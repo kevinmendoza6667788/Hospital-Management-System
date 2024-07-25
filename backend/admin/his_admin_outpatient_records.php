@@ -40,12 +40,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Reporting</a></li>
-                                            <li class="breadcrumb-item active">Reporting</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Informes</a></li>
+                                            <li class="breadcrumb-item active">Informes</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">OutPatient Details</h4>
+                                    <h4 class="page-title">Detalles de paciente ambulatorio</h4>
                                 </div>
                             </div>
                         </div>     
@@ -60,10 +60,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambulatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,12 +78,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Patient Address</th>
-                                                <th data-hide="phone">Patient Phone</th>
-                                                <th data-hide="phone">Patient Age</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre paciente</th>
+                                                <th data-hide="phone">Número de paciente</th>
+                                                <th data-hide="phone">Dirección de pacienete</th>
+                                                <th data-hide="phone">Número de teléfono paciente</th>
+                                                <th data-hide="phone">Edad del paciente</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php

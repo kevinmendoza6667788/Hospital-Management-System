@@ -25,10 +25,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Payroll Record Updated ";
+				$success = "Registro de nómina actualizado ";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -80,12 +80,13 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Payrolls</a></li>
-                                                <li class="breadcrumb-item active">Update Payroll Record</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Nóminas</a></li>
+                                                <li class="breadcrumb-item active">
+                                                Actualizar registro de nómina</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Update Employee Payroll Record</h4>
+                                        <h4 class="page-title">Actualizar Registro de Nómina de Empleados</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -95,23 +96,23 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llene todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputEmail4" class="col-form-label">Employee Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre de empleado</label>
                                                         <input type="text" required="required" readonly name="pay_doc_name" value="<?php echo $row->pay_doc_name;?>" class="form-control" id="inputEmail4" placeholder="Patient's Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Employee Email</label>
+                                                        <label for="inputPassword4" class="col-form-label">Correo de empleado</label>
                                                         <input required="required" type="text" readonly name="pay_doc_email" value="<?php echo $row->pay_doc_email;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Employee Number</label>
+                                                        <label for="inputPassword4" class="col-form-label">Número de empleado</label>
                                                         <input required="required" type="text" readonly name="pay_doc_number" value="<?php echo $row->pay_doc_number?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -120,16 +121,16 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Employee Salary ($)</label>
+                                                        <label for="inputEmail4" class="col-form-label">Salario de empleado (S/.)</label>
                                                         <input type="text" required="required"  name="pay_emp_salary" value="<?php echo $row->pay_emp_salary;?>" class="form-control" id="inputEmail4" >
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                    <label for="inputState" class="col-form-label">Payroll Status</label>
+                                                    <label for="inputState" class="col-form-label">Estado de nómina</label>
                                                     <select id="inputState" required="required" name="pay_status" class="form-control">
-                                                        <option>Choose</option>
-                                                        <option>Paid</option>
-                                                        <option>Unpaid</option>
+                                                        <option>Elegir</option>
+                                                        <option>Pagado</option>
+                                                        <option>No pagado</option>
                                                     </select>
                                                 </div>
 
@@ -140,11 +141,11 @@
                                                 
                                                 
                                                 <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Payroll Description</label>
+                                                        <label for="inputAddress" class="col-form-label">Descripción de nómina</label>
                                                         <textarea   type="text" class="form-control" name="pay_descr" id="editor"> <?php echo $row->pay_descr;?></textarea>
                                                 </div>
 
-                                                <button type="submit" name="update_payroll" class="ladda-button btn btn-primary" data-style="expand-right">Update Payroll Record</button>
+                                                <button type="submit" name="update_payroll" class="ladda-button btn btn-primary" data-style="expand-right">Actualizar registro de nómina</button>
 
                                             </form>
                                             <!--End Patient Form-->

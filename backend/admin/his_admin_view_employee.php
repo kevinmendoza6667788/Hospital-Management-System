@@ -40,12 +40,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Employee</a></li>
-                                            <li class="breadcrumb-item active">View Employee</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Empleado</a></li>
+                                            <li class="breadcrumb-item active">Ver empleado</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Employee Details</h4>
+                                    <h4 class="page-title">Detalles de empleados</h4>
                                 </div>
                             </div>
                         </div>     
@@ -60,10 +60,11 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">
+                                                        Pacientes Ambulatorios</option>
+                                                        <option value="InPatients">Pacientes hospitalizados</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,10 +79,10 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Name</th>
-                                                <th data-hide="phone">Number</th>
-                                                <th data-hide="phone">Email</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre</th>
+                                                <th data-hide="phone">Numero</th>
+                                                <th data-hide="phone">Correo</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php

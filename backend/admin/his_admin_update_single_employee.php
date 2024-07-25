@@ -23,10 +23,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Employee Details Updated";
+				$success = "Detalles del empleado actualizados";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -67,12 +67,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Employee</a></li>
-                                            <li class="breadcrumb-item active">Manage Employee</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Empleado</a></li>
+                                            <li class="breadcrumb-item active">Administrar empleado</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Update Employee Details</h4>
+                                    <h4 class="page-title">Actualizar detalles de empleado</h4>
                                 </div>
                             </div>
                         </div>     
@@ -93,38 +93,38 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llenar todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post" enctype="multipart/form-data">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">First Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre</label>
                                                     <input type="text" required="required" value="<?php echo $row->doc_fname;?>" name="doc_fname" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Last Name</label>
+                                                    <label for="inputPassword4" class="col-form-label">Apellido</label>
                                                     <input required="required" type="text" value="<?php echo $row->doc_lname;?>" name="doc_lname" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Email</label>
+                                                <label for="inputAddress" class="col-form-label">Correo</label>
                                                 <input required="required" type="email" value="<?php echo $row->doc_email;?>" class="form-control" name="doc_email" id="inputAddress">
                                             </div>
                                             
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Password</label>
+                                                    <label for="inputCity" class="col-form-label">Contraseña</label>
                                                     <input required="required"  type="password" name="doc_pwd" class="form-control" id="inputCity">
                                                 </div> 
                                                 
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Profile Picture</label>
+                                                    <label for="inputCity" class="col-form-label">Foto de perfil</label>
                                                     <input required="required"  type="file" name="doc_dpic" class="btn btn-success form-control"  id="inputCity">
                                                 </div>
                                             </div>                                            
 
-                                            <button type="submit" name="update_doc" class="ladda-button btn btn-success" data-style="expand-right">Add Employee</button>
+                                            <button type="submit" name="update_doc" class="ladda-button btn btn-success" data-style="expand-right">Agregar empleado</button>
 
                                         </form>
                                         <!--End Patient Form-->

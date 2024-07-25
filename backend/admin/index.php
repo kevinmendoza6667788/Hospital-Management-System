@@ -31,7 +31,8 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Hospital Management System -A Super Responsive Information System</title>
+        <title>Sistema de gestión hospitalaria: un sistema de información súper receptivo
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="" name="description" />
         <meta content="" name="MartDevelopers" />
@@ -89,23 +90,25 @@
                                     <a href="index.php">
                                         <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Enter your email address and password to access admin panel.</p>
+                                    <p class="text-muted mb-4 mt-3">
+                                    Ingrese su dirección de correo electrónico y contraseña para acceder al panel de administración.</p>
                                 </div>
 
                                 <form method='post' >
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Email address</label>
+                                        <label for="emailaddress">Dirección de correo</label>
                                         <input class="form-control" name="ad_email" type="email" id="emailaddress" required="" placeholder="Enter your email">
                                     </div>
 
                                     <div class="form-group mb-3">
-                                        <label for="password">Password</label>
+                                        <label for="password">Contraseña</label>
                                         <input class="form-control" name="ad_pwd" type="password" required="" id="password" placeholder="Enter your password">
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-primary btn-block" name="admin_login" type="submit"> Admin Log In </button>
+                                        <button class="btn btn-primary btn-block" name="admin_login" type="submit"> 
+                                        Iniciar sesión de administrador </button>
                                     </div>
 
                                 </form>
@@ -138,7 +141,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p> <a href="his_admin_pwd_reset.php" class="text-white-50 ml-1">Forgot your password?</a></p>
+                                <p> <a href="his_admin_pwd_reset.php" class="text-white-50 ml-1">¿Olvidaste tu contraseña?</a></p>
                                <!-- <p class="text-white-50">Don't have an account? <a href="his_admin_register.php" class="text-white ml-1"><b>Sign Up</b></a></p>-->
                             </div> <!-- end col -->
                         </div>

@@ -23,10 +23,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Account Payable Details Added";
+				$success = "Detalles de cuenta por pagar agregados";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -68,12 +68,13 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Accounting</a></li>
-                                            <li class="breadcrumb-item active">Add Payable Account</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Contabilidad</a></li>
+                                            <li class="breadcrumb-item active">Agregar cuenta por pagar</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Payable Account Details</h4>
+                                    <h4 class="page-title">
+                                    Detalles de la cuenta por pagar</h4>
                                 </div>
                             </div>
                         </div>     
@@ -83,17 +84,17 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llenar todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Account Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre de la cuenta</label>
                                                     <input type="text" required="required" name="acc_name" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Account Amount($)</label>
+                                                    <label for="inputEmail4" class="col-form-label">Monto de la cuenta(S/.)</label>
                                                     <input type="text" required="required" name="acc_amount" class="form-control" id="inputEmail4" >
                                                 </div>
                                             </div>
@@ -103,21 +104,21 @@
                                                     $length = 15;    
                                                     $account_number =  substr(str_shuffle('0123456789'),1,$length);
                                                 ?>
-                                                <label for="inputZip" class="col-form-label">Account Number</label>
+                                                <label for="inputZip" class="col-form-label">Número de cuenta</label>
                                                 <input type="text" name="acc_number" value="<?php echo $account_number;?>" class="form-control" id="inputZip">
                                             </div>
 
                                             <div class="form-group ">
-                                                    <label for="inputPassword4" class="col-form-label">Account Description</label>
+                                                    <label for="inputPassword4" class="col-form-label">Descripción de la cuenta</label>
                                                     <textarea required="required" type="text" name="acc_desc" class="form-control"  id="editor"></textarea>
                                             </div>
 
                                             <div class="form-group" style="display:none">
-                                                <label for="inputAddress" class="col-form-label">Account Type</label>
+                                                <label for="inputAddress" class="col-form-label">Tipo de cuenta</label>
                                                 <input required="required" value="Payable Account" type="text" class="form-control" name="acc_type" id="inputAddress">
                                             </div>
 
-                                            <button type="submit" name="add_acc" class="ladda-button btn btn-success" data-style="expand-right">Add Account</button>
+                                            <button type="submit" name="add_acc" class="ladda-button btn btn-success" data-style="expand-right">Agregar cuenta</button>
 
                                         </form>
                                         <!--End Patient Form-->

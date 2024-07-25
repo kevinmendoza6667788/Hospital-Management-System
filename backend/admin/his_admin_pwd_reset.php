@@ -23,10 +23,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Check your inbox for password reset instructions";
+				$success = "Revise su bandeja de entrada para obtener instrucciones para restablecer su contraseña.";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -41,7 +41,7 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Hospital Management Information System -A Super Responsive Information System</title>
+        <title>Sistema de información de gestión hospitalaria: un sistema de información súper receptivo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -61,7 +61,7 @@
                 <script>
                             setTimeout(function () 
                             { 
-                                swal("Success","<?php echo $success;?>","success");
+                                swal("Success","<?php echo $success;?>","Éxito");
                             },
                                 100);
                 </script>
@@ -73,7 +73,7 @@
                 <script>
                             setTimeout(function () 
                             { 
-                                swal("Failed","<?php echo $err;?>","Failed");
+                                swal("Failed","<?php echo $err;?>","Fallido");
                             },
                                 100);
                 </script>
@@ -98,30 +98,30 @@
                                     <a href="his_doc_reset_pwd.php">
                                         <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Enter your email address and we'll send you an email with instructions to reset your password.</p>
+                                    <p class="text-muted mb-4 mt-3">Ingrese su dirección de correo electrónico y le enviaremos un correo electrónico con instrucciones para restablecer su contraseña.</p>
                                 </div>
 
                                 <form method="post" >
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Email address</label>
+                                        <label for="emailaddress">Dirección de correo electronico</label>
                                         <input class="form-control" name="email" type="email" id="emailaddress" required="" placeholder="Enter your email">
                                     </div>
                                     <div class="form-group mb-3" style="display:none">
-                                        <label for="emailaddress">Reset Token</label>
+                                        <label for="emailaddress">Restablecer ficha</label>
                                         <input class="form-control" name="token" type="text" value="<?php echo $_token;?>">
                                     </div>
                                     <div class="form-group mb-3" style="display:none">
-                                        <label for="emailaddress">Reset Temp Pwd</label>
+                                        <label for="emailaddress">Restablecer contraseña temporal</label>
                                         <input class="form-control" name="pwd" type="text" value ="<?php echo $temp_pwd;?>">
                                     </div>
                                     <div class="form-group mb-3" style="display:none">
-                                        <label for="emailaddress">Status</label>
+                                        <label for="emailaddress">Estado</label>
                                         <input class="form-control" name="status" type="text" id="emailaddress" required="" value="Pending">
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button name="reset_pwd" class="btn btn-primary btn-block" type="submit"> Reset Password </button>
+                                        <button name="reset_pwd" class="btn btn-primary btn-block" type="submit"> Restablecer la contraseña </button>
                                     </div>
 
                                 </form>
@@ -132,7 +132,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-white-50">Back to <a href="index.php" class="text-white ml-1"><b>Log in</b></a></p>
+                                <p class="text-white-50">De regreso <a href="index.php" class="text-white ml-1"><b>Acceso</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->

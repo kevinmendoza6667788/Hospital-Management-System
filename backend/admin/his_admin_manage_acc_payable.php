@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Payable Account Records Deleted";
+            $success = "Registros de cuentas por pagar eliminados";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarder";
             }
     }
 ?>
@@ -58,12 +58,14 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Accounts</a></li>
-                                            <li class="breadcrumb-item active">Manage Payable Accounts</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Cuentas</a></li>
+                                            <li class="breadcrumb-item active">
+                                            Administrar cuentas por pagar</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Payable Accounts</h4>
+                                    <h4 class="page-title">
+                                    Administrar cuentas por pagar</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +80,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todos</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Paciente ambulatorio</option>
+                                                        <option value="InPatients">Paciente intl_error_name</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,10 +98,11 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Account Name</th>
-                                                <th data-hide="phone">Account Number</th>
-                                                <th data-hide="phone">Account Amount</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de cuenta</th>
+                                                <th data-hide="phone">Número de cuenta</th>
+                                                <th data-hide="phone">
+                                                Monto de la cuenta</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php

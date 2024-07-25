@@ -19,10 +19,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Employee Transfered";
+				$success = "Empleado transferido";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -64,12 +64,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Employee</a></li>
-                                            <li class="breadcrumb-item active">Transfer Employee</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Empleado</a></li>
+                                            <li class="breadcrumb-item active">Tranferir empleado</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Transfer Employee From One Department To Another</h4>
+                                    <h4 class="page-title">Transferir empleado de un departamento a otror</h4>
                                 </div>
                             </div>
                         </div>     
@@ -90,48 +90,49 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llenar todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post" enctype="multipart/form-data">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">First Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre</label>
                                                     <input type="text" required="required" readonly value="<?php echo $row->doc_fname;?>" name="doc_fname" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Last Name</label>
+                                                    <label for="inputPassword4" class="col-form-label">Apellido</label>
                                                     <input required="required" type="text" readonly value="<?php echo $row->doc_lname;?>" name="doc_lname" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Email</label>
+                                                <label for="inputAddress" class="col-form-label">Correo</label>
                                                 <input required="required" type="email" readonly value="<?php echo $row->doc_email;?>" class="form-control" name="doc_email" id="inputAddress">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Employee Number</label>
+                                                <label for="inputAddress" class="col-form-label">Número de empleado</label>
                                                 <input required="required" type="email" readonly value="<?php echo $row->doc_number;?>" class="form-control" name="doc_email" id="inputAddress">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Employee Current Working Department </label>
+                                                <label for="inputAddress" class="col-form-label">Departamento de trabajo actual del empleado </label>
                                                 <input required="required" type="email" readonly value="<?php echo $row->doc_dept;?>" class="form-control" name="doc_email" id="inputAddress">
                                             </div>
                                             
                                             <div class="form-group">
-                                                    <label for="inputState" class="col-form-label">Transfer Department</label>
+                                                    <label for="inputState" class="col-form-label">Departamento de Transferencia</label>
                                                     <select id="inputState" required="required" name="doc_dept" class="form-control">
-                                                        <option>Choose</option>
+                                                        <option>Elegir</option>
                                                         <option>Patient Registration</option>
-                                                        <option>Laboratory</option>
-                                                        <option>Pharmacy</option>
-                                                        <option>Accounting</option>
-                                                        <option>Surgery | Theatre</option>
+                                                        <option>
+                                                        Registro de pacientes</option>
+                                                        <option>Farmacia</option>
+                                                        <option>Contabilidad</option>
+                                                        <option>Cirugía | Quirófano</option>
                                                     </select>
                                             </div>                                         
 
-                                            <button type="submit" name="trans_dept" class="ladda-button btn btn-success" data-style="expand-right">Transfer Employee</button>
+                                            <button type="submit" name="trans_dept" class="ladda-button btn btn-success" data-style="expand-right">Transferir empleado</button>
 
                                         </form>
                                         <!--End Patient Form-->

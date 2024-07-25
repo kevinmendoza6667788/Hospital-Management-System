@@ -40,12 +40,13 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratory</a></li>
-                                            <li class="breadcrumb-item active">Add Laboratory Test</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratorio</a></li>
+                                            <li class="breadcrumb-item active">
+                                            Agregar prueba de laboratorio</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Laboratory Tests</h4>
+                                    <h4 class="page-title">Pruebas de laboratorio</h4>
                                 </div>
                             </div>
                         </div>     
@@ -60,10 +61,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Desacargado</option>
+                                                        <option value="OutPatients">Pacientes amblatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,13 +79,13 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Patient Address</th>
-                                                <th data-hide="phone">Patient Ailment</th>
-                                                <th data-hide="phone">Patient Age</th>
-                                                <th data-hide="phone">Patient Category</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de paciente</th>
+                                                <th data-hide="phone">Número de paciente</th>
+                                                <th data-hide="phone">Dirección de paciente</th>
+                                                <th data-hide="phone">Dolencia del paciente</th>
+                                                <th data-hide="phone">Edad de paciente</th>
+                                                <th data-hide="phone">Categoría paciente</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -112,7 +113,7 @@
                                                     <td><?php echo $row->pat_age;?> Years</td>
                                                     <td><?php echo $row->pat_type;?></td>
                                                     
-                                                    <td><a href="his_admin_add_single_lab_test.php?pat_number=<?php echo $row->pat_number;?>" class="badge badge-success"><i class="mdi mdi-beaker "></i> Add Lab Test</a></td>
+                                                    <td><a href="his_admin_add_single_lab_test.php?pat_number=<?php echo $row->pat_number;?>" class="badge badge-success"><i class="mdi mdi-beaker "></i> Agregar pruba de laboratorio</a></td>
                                                 </tr>
                                                 </tbody>
                                             <?php  $cnt = $cnt +1 ; }?>

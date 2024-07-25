@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Surgery Patient's  Records Deleted";
+            $success = "Registros del paciente de cirugía eliminados";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarde";
             }
     }
 ?>
@@ -58,12 +58,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Surgery | Theatre</a></li>
-                                            <li class="breadcrumb-item active">Manage Patient</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Cirugía | Quirófano</a></li>
+                                            <li class="breadcrumb-item active">Administrar paciente</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Patients In Surgery</h4>
+                                    <h4 class="page-title">Manejar pacientes en cirugía</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +78,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambulatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,12 +96,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Patient Ailment</th>
-                                                <th data-hide="phone">Surgeon </th>
-                                                <th data-hide="phone">Surgery Date </th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre del paciente</th>
+                                                <th data-hide="phone">Número del paciente</th>
+                                                <th data-hide="phone">Dolencia del paciente</th>
+                                                <th data-hide="phone">Cirujano</th>
+                                                <th data-hide="phone">Fecha de la cirugía </th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -131,8 +131,8 @@
 
                                                     
                                                     <td>
-                                                        <a href="his_admin_update_single_patient_surgery.php?s_number=<?php echo $row->s_number;?>" class="badge badge-success"><i class="fas fa-edit"></i> Update</a>
-                                                        <a href="his_admin_manage_theatre_patient.php?delete_s_number=<?php echo $row->s_number?>" class="badge badge-danger"><i class="fas fa-trash"></i> Delete Record</a>
+                                                        <a href="his_admin_update_single_patient_surgery.php?s_number=<?php echo $row->s_number;?>" class="badge badge-success"><i class="fas fa-edit"></i> Actualizar</a>
+                                                        <a href="his_admin_manage_theatre_patient.php?delete_s_number=<?php echo $row->s_number?>" class="badge badge-danger"><i class="fas fa-trash"></i> Eliminar registro</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

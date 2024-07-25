@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Pharmaceutical Category Records Deleted";
+            $success = "Registros de categorías farmacéuticas eliminados";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarde";
             }
     }
 ?>
@@ -58,12 +58,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Manage Pharmaceutical Category</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Productos farmacéuticos</a></li>
+                                            <li class="breadcrumb-item active">Administrar categoría farmacéutica</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Pharmaceutical Categories</h4>
+                                    <h4 class="page-title">Administrar categorías farmacéuticas</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +78,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambulatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,9 +96,9 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Category Name</th>
-                                                <th data-hide="phone">Category Vendor</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de categoría</th>
+                                                <th data-hide="phone">Categoría proveedor</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -121,9 +121,9 @@
                                                     <td><?php echo $row->pharm_cat_name;?></td>
                                                     <td><?php echo $row->pharm_cat_vendor;?></td>
                                                     <td>
-                                                        <a href="his_admin_view_single_pharm_category.php?pharm_cat_id=<?php echo $row->pharm_cat_id;?>" class="badge badge-success"><i class="far fa-eye "></i> View</a>
-                                                        <a href="his_admin_update_single_pharm_category.php?pharm_cat_name=<?php echo $row->pharm_cat_name;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Update</a>
-                                                        <a href="his_admin_manage_pharm_cat.php?delete_pharm_cat=<?php echo $row->pharm_cat_id;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Delete</a>
+                                                        <a href="his_admin_view_single_pharm_category.php?pharm_cat_id=<?php echo $row->pharm_cat_id;?>" class="badge badge-success"><i class="far fa-eye "></i> Vista</a>
+                                                        <a href="his_admin_update_single_pharm_category.php?pharm_cat_name=<?php echo $row->pharm_cat_name;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Actualizar</a>
+                                                        <a href="his_admin_manage_pharm_cat.php?delete_pharm_cat=<?php echo $row->pharm_cat_id;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Eliminar</a>
 
 
                                                     </td>

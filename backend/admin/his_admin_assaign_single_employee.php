@@ -64,12 +64,14 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Employee</a></li>
-                                            <li class="breadcrumb-item active">Assign Department</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Empleado</a></li>
+                                            <li class="breadcrumb-item active">
+                                            Asignar departamento</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Assign Department</h4>
+                                    <h4 class="page-title">
+                                    Asignar departamento</h4>
                                 </div>
                             </div>
                         </div>     
@@ -90,16 +92,16 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llene todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post" enctype="multipart/form-data">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">First Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombres</label>
                                                     <input type="text" required="required" readonly value="<?php echo $row->doc_fname;?>" name="doc_fname" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Last Name</label>
+                                                    <label for="inputPassword4" class="col-form-label">Apellidos</label>
                                                     <input required="required" type="text" readonly value="<?php echo $row->doc_lname;?>" name="doc_lname" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
@@ -110,18 +112,24 @@
                                             </div>
                                             
                                             <div class="form-group">
-                                                    <label for="inputState" class="col-form-label">Departments</label>
+                                                    <label for="inputState" class="col-form-label">Departamentos</label>
                                                     <select id="inputState" required="required" name="doc_dept" class="form-control">
-                                                        <option>Choose</option>
-                                                        <option>Patient Registration</option>
-                                                        <option>Laboratory</option>
-                                                        <option>Pharmacy</option>
-                                                        <option>Accounting</option>
-                                                        <option>Surgery | Theatre</option>
+                                                        <option>
+                                                        Elegir</option>
+                                                        <option>
+                                                        Registro de pacientes</option>
+                                                        <option>
+                                                        Laboratorio</option>
+                                                        <option>
+                                                        Farmacia</option>
+                                                        <option>
+                                                        Contabilidad</option>
+                                                        <option>
+                                                        Cirugía | Teatro</option>
                                                     </select>
                                             </div>                                         
 
-                                            <button type="submit" name="assaign_dept" class="ladda-button btn btn-success" data-style="expand-right">Assign Department</button>
+                                            <button type="submit" name="assaign_dept" class="ladda-button btn btn-success" data-style="expand-right">Asignar departamento</button>
 
                                         </form>
                                         <!--End Patient Form-->

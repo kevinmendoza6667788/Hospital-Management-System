@@ -39,7 +39,8 @@
                             <div class="col-12">
                                 <div class="page-title-box">
                                     
-                                    <h4 class="page-title">Hospital Management System Dashboard</h4>
+                                    <h4 class="page-title">
+                                    Panel del sistema de gestión hospitalaria</h4>
                                 </div>
                             </div>
                         </div>     
@@ -68,7 +69,8 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $outpatient;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Out Patients</p>
+                                                <p class="text-muted mb-1 text-truncate">
+                                                Pacientes ambulatorios</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -98,7 +100,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $inpatient;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">In Patients</p>
+                                                <p class="text-muted mb-1 text-truncate">Pacienetes internos</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -127,7 +129,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $doc;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Hospital Employees</p>
+                                                <p class="text-muted mb-1 text-truncate">Empleados del hospital</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -162,7 +164,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $vendor;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Vendors</p>
+                                                <p class="text-muted mb-1 text-truncate">Proveedores</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -193,7 +195,8 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $assets;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Corporation Assets</p>
+                                                <p class="text-muted mb-1 text-truncate">
+                                                Activos de la corporación</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -224,7 +227,8 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $phar;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Pharmaceuticals</p>
+                                                <p class="text-muted mb-1 text-truncate">
+                                                Productos farmacéuticos</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -240,18 +244,18 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="card-box">
-                                    <h4 class="header-title mb-3">Hospital Employees</h4>
+                                    <h4 class="header-title mb-3">Empleados hospitalarios</h4>
 
                                     <div class="table-responsive">
                                         <table class="table table-borderless table-hover table-centered m-0">
 
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th colspan="2">Picture</th>
-                                                    <th>Name</th>
-                                                    <th>Email</th>
-                                                    <th>Department</th>
-                                                    <th>Action</th>
+                                                    <th colspan="2">Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Correo</th>
+                                                    <th>Departamento</th>
+                                                    <th>Acción</th>
                                                 </tr>
                                             </thead>
                                             <?php
@@ -282,7 +286,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="his_admin_view_single_employee.php?doc_id=<?php echo $row->doc_id;?>&&doc_number=<?php echo $row->doc_number;?>" class="btn btn-xs btn-primary"><i class="mdi mdi-eye"></i> View</a>
-                                                    </td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                                    </td>                                                                                 
                                                 </tr>
                                             </tbody>
                                             <?php }?>
@@ -317,7 +321,7 @@
                 <a href="javascript:void(0);" class="right-bar-toggle float-right">
                     <i class="dripicons-cross noti-icon"></i>
                 </a>
-                <h5 class="m-0 text-white">Settings</h5>
+                <h5 class="m-0 text-white">Configuración</h5>
             </div>
             <div class="slimscroll-menu">
                 <!-- User box -->
@@ -328,78 +332,79 @@
                     </div>
             
                     <h5><a href="javascript: void(0);">Geneva Kennedy</a> </h5>
-                    <p class="text-muted mb-0"><small>Admin Head</small></p>
+                    <p class="text-muted mb-0"><small>Jefa de administración</small></p>
                 </div>
 
                 <!-- Settings -->
                 <hr class="mt-0" />
-                <h5 class="pl-3">Basic Settings</h5>
+                <h5 class="pl-3">Ajustes básicos</h5>
                 <hr class="mb-0" />
 
                 <div class="p-3">
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox1" type="checkbox" checked>
                         <label for="Rcheckbox1">
-                            Notifications
+                            Notificaciones
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox2" type="checkbox" checked>
                         <label for="Rcheckbox2">
-                            API Access
+                            API Acceso
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox3" type="checkbox">
                         <label for="Rcheckbox3">
-                            Auto Updates
+                            Actualizaciones automáticas
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox4" type="checkbox" checked>
                         <label for="Rcheckbox4">
-                            Online Status
+                        Estado en línea
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-0">
                         <input id="Rcheckbox5" type="checkbox" checked>
                         <label for="Rcheckbox5">
-                            Auto Payout
+                            Pago automático
                         </label>
                     </div>
                 </div>
 
                 <!-- Timeline -->
                 <hr class="mt-0" />
-                <h5 class="px-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+                <h5 class="px-3">
+                Mensajes<span class="float-right badge badge-pill badge-danger">25</span></h5>
                 <hr class="mb-0" />
                 <div class="p-3">
                     <div class="inbox-widget">
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
-                            <p class="inbox-item-text">I've finished it! See you so...</p>
+                            <p class="inbox-item-text">¡Lo he terminado! Nos vemos así...</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
+                            <p class="inbox-item-text">Este tema es genial!</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
-                            <p class="inbox-item-text">Nice to meet you</p>
+                            <p class="inbox-item-text">Encantado de conocerte</p>
                         </div>
 
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
-                            <p class="inbox-item-text">Hey! there I'm available...</p>
+                            <p class="inbox-item-text">¡Ey! ahí estoy disponible...</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
+                            <p class="inbox-item-text">¡Este tema es increíble!</p>
                         </div>
                     </div> <!-- end inbox-widget -->
                 </div> <!-- end .p-3-->

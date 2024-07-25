@@ -24,10 +24,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Vendor Details Updated";
+				$success = "Detalles de proveedor actualziados";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -69,12 +69,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Vendor</a></li>
-                                            <li class="breadcrumb-item active">Update Vendor</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Proveedor</a></li>
+                                            <li class="breadcrumb-item active">Actualizar proveedor</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Update Vendor Details</h4>
+                                    <h4 class="page-title">Actualizar detalles del proveedor</h4>
                                 </div>
                             </div>
                         </div>     
@@ -95,36 +95,37 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llenar todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-4">
-                                                    <label for="inputEmail4" class="col-form-label">Vendor Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre del proveedor</label>
                                                     <input type="text" required="required" value="<?php echo $row->v_name;?>" name="v_name" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label for="inputPassword4" class="col-form-label">Vendor Phone Number</label>
+                                                    <label for="inputPassword4" class="col-form-label">Número de telefono del proveedor</label>
                                                     <input required="required" type="text" value="<?php echo $row->v_phone;?>" name="v_phone" class="form-control"  id="inputPassword4">
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label for="inputPassword4" class="col-form-label">Vendor Address</label>
+                                                    <label for="inputPassword4" class="col-form-label">Dirección del proveedor</label>
                                                     <input required="required" value="<?php echo $row->v_adr;?>" type="text" name="v_adr" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
 
                                             
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Vendor Email</label>
+                                                <label for="inputAddress" class="col-form-label">Correo electrónico del proveedor</label>
                                                 <input required="required" value="<?php echo $row->v_email;?>" type="email" class="form-control" name="v_email" id="inputAddress">
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Vendor Details</label>
+                                                <label for="inputAddress" class="col-form-label">
+                                                Detalles del proveedor</label>
                                                 <textarea  type="text" class="form-control" name="v_desc" id="editor"><?php echo $row->v_desc;?></textarea>
                                             </div>
 
-                                            <button type="submit" name="update_vendor" class="ladda-button btn btn-success" data-style="expand-right">Update Vendor</button>
+                                            <button type="submit" name="update_vendor" class="ladda-button btn btn-success" data-style="expand-right">Actualizar proveedor</button>
 
                                         </form>
                                         <!--End Patient Form-->

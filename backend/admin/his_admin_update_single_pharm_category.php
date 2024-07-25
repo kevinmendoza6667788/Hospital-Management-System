@@ -21,10 +21,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Pharmaceutical Category Upadated ";
+				$success = "Categoría farmacéutica actualizada";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -76,9 +76,10 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Manage Pharmaceutical Category</li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">
+                                            Productos farmacéuticos</a></li>
+                                            <li class="breadcrumb-item active">Administrar categoría farmacéutica</li>
                                         </ol>
                                     </div>
                                     <h4 class="page-title"><?php echo $row->pharm_cat_name;?></h4>
@@ -91,29 +92,28 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Lllenar todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row" >
                                                 <div class="form-group col-md-6" style="display:none">
-                                                    <label for="inputEmail4" class="col-form-label">Pharmaceutical Category Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre de la categoría farmacéutica</label>
                                                     <input  type="text" value="<?php echo $row->pharm_cat_name;?>" required="required" name="pharm_cat_name" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputPassword4" class="col-form-label">Pharmaceutical Category Vendor</label>
+                                                    <label for="inputPassword4" class="col-form-label">Proveedor de la categoría farmacéutica</label>
                                                     <input required="required" value="<?php echo $row->pharm_cat_vendor;?>" type="text" name="pharm_cat_vendor" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Pharmaceutical Category Description</label>
+                                                <label for="inputAddress" class="col-form-label">Descripción de la categoría farmacéutica</label>
                                                 <textarea required="required" type="text" class="form-control" name="pharm_cat_desc" id="editor"><?php echo $row->pharm_cat_desc;?></textarea>
                                             </div>
 
-                                           <button type="submit" name="update_pharmaceutical_category" class="ladda-button btn btn-danger" data-style="expand-right">Update Category</button>
+                                           <button type="submit" name="update_pharmaceutical_category" class="ladda-button btn btn-danger" data-style="expand-right">Actualizar categoría</button>
 
                                         </form>
-                                     
                                     </div> <!-- end card-body -->
                                 </div> <!-- end card-->
                             </div> <!-- end col -->

@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Medical Records Deleted";
+            $success = "Registros médicos eliminados";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarde";
             }
     }
 ?>
@@ -58,12 +58,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Reporting</a></li>
-                                            <li class="breadcrumb-item active">Medical Records</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Informes</a></li>
+                                            <li class="breadcrumb-item active">Registro médicos</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">View Medical Records</h4>
+                                    <h4 class="page-title">Ver registros médicos</h4>
                                 </div>
                             </div>
                         </div>     
@@ -79,9 +79,9 @@
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
                                                         <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacienetes ambulatorio</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,12 +96,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Address</th>
-                                                <th data-hide="phone">Ailment</th>
-                                                <th data-hide="phone">Age</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre del paciente</th>
+                                                <th data-hide="phone">Número del paciente</th>
+                                                <th data-hide="phone">Dirección</th>
+                                                <th data-hide="phone">Enfermedad</th>
+                                                <th data-hide="phone">Edad</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -128,7 +128,7 @@
                                                     <td><?php echo $row->mdr_pat_ailment;?></td>
                                                     <td><?php echo $row->mdr_pat_age;?> Years</td>
                                                     <td>
-                                                        <a href="his_admin_view_single_medical_record.php?mdr_id=<?php echo $row->mdr_id;?>&&mdr_number=<?php echo $row->mdr_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> View</a>
+                                                        <a href="his_admin_view_single_medical_record.php?mdr_id=<?php echo $row->mdr_id;?>&&mdr_number=<?php echo $row->mdr_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> Vista</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

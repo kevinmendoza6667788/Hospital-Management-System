@@ -41,12 +41,13 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Reporting</a></li>
-                                            <li class="breadcrumb-item active">Accounts</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">
+                                            Informes</a></li>
+                                            <li class="breadcrumb-item active">Cuentas</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Accounts Records</h4>
+                                    <h4 class="page-title">Registro de cuentas</h4>
                                 </div>
                             </div>
                         </div>     
@@ -61,10 +62,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambulatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -79,11 +80,11 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Account Name</th>
-                                                <th data-hide="phone">Account Number</th>
-                                                <th data-hide="phone">Account Amount</th>
-                                                <th data-hide="phone">Account Type</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de cuenta</th>
+                                                <th data-hide="phone">Número de cuenta</th>
+                                                <th data-hide="phone">Monto de la cuenta</th>
+                                                <th data-hide="phone">Tipo de cuenta</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
