@@ -53,9 +53,9 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Employees</a></li>
-                                            <li class="breadcrumb-item active">View Employees</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Empleados</a></li>
+                                            <li class="breadcrumb-item active">Ver empleados</li>
                                         </ol>
                                     </div>
                                     <h4 class="page-title"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?>'s Profile</h4>
@@ -73,10 +73,10 @@
                                     
                                     <div class="text-centre mt-3">
                                         
-                                        <p class="text-muted mb-2 font-13"><strong>Full Name :</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
-                                       <p class="text-muted mb-2 font-13"><strong>Department :</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Employee Number :</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Email :</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Nombre completo :</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
+                                       <p class="text-muted mb-2 font-13"><strong>Departamento :</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Número de empleado:</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Correo :</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
 
 
                                     </div>
@@ -90,11 +90,11 @@
                                     <table class="table table-bordered table-hover mb-0">
                                         <thead class="thead-light">
                                             <tr>
-                                                <th>Body Temperature</th>
-                                                <th>Heart Rate/Pulse</th>
-                                                <th>Respiratory Rate</th>
-                                                <th>Blood Pressure</th>
-                                                <th>Date Recorded</th>
+                                                <th>Temperatura corporal</th>
+                                                <th>Frecuencia cardíaca/pulso</th>
+                                                <th>Frecuencia respiratoria</th>
+                                                <th>Presión arterial</th>
+                                                <th>Fecha de grabación</th>
                                             </tr>
                                         </thead>
                                         <?php

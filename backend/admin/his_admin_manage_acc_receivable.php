@@ -58,12 +58,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Accounts</a></li>
-                                            <li class="breadcrumb-item active">Manage Receivable Accounts</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Cuentas</a></li>
+                                            <li class="breadcrumb-item active">Administrar cuentas por cobrar</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Receivable Accounts</h4>
+                                    <h4 class="page-title">Administrar cuentas por cobrar</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +78,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Paciente  ambulatorio</option>
+                                                        <option value="InPatients">Paciente interno</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,10 +96,10 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Account Name</th>
-                                                <th data-hide="phone">Account Number</th>
-                                                <th data-hide="phone">Account Amount</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de cuenta</th>
+                                                <th data-hide="phone">Número de cuenta</th>
+                                                <th data-hide="phone">Monto de la cuenta</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -123,7 +123,7 @@
                                                     <td>
                                                         <a href="his_admin_view_single_payable_account.php?acc_number=<?php echo $row->acc_number;?>" class="badge badge-success"><i class="fas fa-eye "></i> View</a>
                                                         <a href="his_admin_update_single_receivable_account.php?acc_number=<?php echo $row->acc_number;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Update</a>
-                                                        <a href="his_admin_manage_acc_receivable.php?delete_account=<?php echo $row->acc_number;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Delete</a>
+                                                        <a href="his_admin_manage_acc_receivable.php?delete_account=<?php echo $row->acc_number;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Eliminar</a>
 
 
                                                     </td>

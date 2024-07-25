@@ -79,12 +79,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Payrolls</a></li>
-                                                <li class="breadcrumb-item active">Add Payroll Record</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Nóminas</a></li>
+                                                <li class="breadcrumb-item active">Agregar registro de nómina</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Add Employee Payroll Record</h4>
+                                        <h4 class="page-title">Agregar registro de nómina de empleados</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -94,23 +94,25 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llene todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputEmail4" class="col-form-label">Employee Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre de empleado</label>
                                                         <input type="text" required="required" readonly name="pay_doc_name" value="<?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?>" class="form-control" id="inputEmail4" placeholder="Patient's Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Employee Email</label>
+                                                        <label for="inputPassword4" class="col-form-label">
+                                                        Correo electrónico del empleado</label>
                                                         <input required="required" type="text" readonly name="pay_doc_email" value="<?php echo $row->doc_email;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Employee Number</label>
+                                                        <label for="inputPassword4" class="col-form-label">
+                                                        Número de empleado</label>
                                                         <input required="required" type="text" readonly name="pay_doc_number" value="<?php echo $row->doc_number;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -119,7 +121,7 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-12">
-                                                        <label for="inputEmail4" class="col-form-label">Employee Salary ($)</label>
+                                                        <label for="inputEmail4" class="col-form-label">Salario del empleado (S/)</label>
                                                         <input type="text" required="required"  name="pay_emp_salary"  class="form-control" id="inputEmail4" >
                                                     </div>
 
@@ -135,17 +137,17 @@
                                                             $length = 5;    
                                                             $pay_no =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                         ?>
-                                                        <label for="inputZip" class="col-form-label">Payroll Record Number</label>
+                                                        <label for="inputZip" class="col-form-label">Número de registro de nómina</label>
                                                         <input type="text" name="pay_number" value="<?php echo $pay_no;?>" class="form-control" id="inputZip">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Payroll Description</label>
+                                                        <label for="inputAddress" class="col-form-label">Descripción de nómina</label>
                                                         <textarea   type="text" class="form-control" name="pay_descr" id="editor"> </textarea>
                                                 </div>
 
-                                                <button type="submit" name="add_payroll" class="ladda-button btn btn-primary" data-style="expand-right">Add Payroll Record</button>
+                                                <button type="submit" name="add_payroll" class="ladda-button btn btn-primary" data-style="expand-right">Agregar registro de nómina</button>
 
                                             </form>
                                             <!--End Patient Form-->

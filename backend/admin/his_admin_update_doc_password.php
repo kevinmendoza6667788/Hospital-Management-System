@@ -19,11 +19,11 @@
 			
 			if($stmt && $stmt1)
 			{
-				$success = "Password Updated";
+				$success = "Contraseña actualizada";
 			}
             else
             {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
             }
             			
 		}
@@ -63,12 +63,13 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Password Resets</a></li>
-                                            <li class="breadcrumb-item active">Manage </li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Restablecimiento de contraseña</a></li>
+                                            <li class="breadcrumb-item active">Administrar </li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Update Employee Password Details</h4>
+                                    <h4 class="page-title">
+                                    Actualizar los detalles de la contraseña del empleado</h4>
                                 </div>
                             </div>
                         </div>     
@@ -89,27 +90,29 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llene todos los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post" enctype="multipart/form-data">
                                             
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Email</label>
+                                                    <label for="inputCity" class="col-form-label">Correo</label>
                                                     <input required="required"  type="email" value="<?php echo $row->email;?>" class="form-control" name="doc_email" id="inputCity">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Password</label>
+                                                    <label for="inputCity" class="col-form-label">Contraseña</label>
                                                     <input required="required"  type="text" value="<?php echo $row->pwd;?>"  name="doc_pwd" class="form-control" id="inputCity">
                                                 </div>
                                                 <div class="form-group col-md-6" style="display:none">
-                                                    <label for="inputCity" class="col-form-label">Reset Status</label>
+                                                    <label for="inputCity" class="col-form-label">
+                                                    Reestablezca su estatus</label>
                                                     <input required="required"  type="text" value="Reset"  name="status" class="form-control" id="inputCity">
                                                 </div>  
                                                 
                                             </div>                                            
 
-                                            <button type="submit" name="update_doc" class="ladda-button btn btn-success" data-style="expand-right">Update Password</button>
+                                            <button type="submit" name="update_doc" class="ladda-button btn btn-success" data-style="expand-right">
+                                            Actualiza contraseña</button>
 
                                         </form>
                                         <!--End Patient Form-->

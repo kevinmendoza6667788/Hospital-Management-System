@@ -61,12 +61,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Payroll</a></li>
-                                            <li class="breadcrumb-item active">Generate Payroll</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Nómina de sueldos</a></li>
+                                            <li class="breadcrumb-item active">Generar nómina</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Employee Payroll Details</h4>
+                                    <h4 class="page-title">Detalles de nómina de empleados</h4>
                                 </div>
                             </div>
                         </div>     
@@ -81,10 +81,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostarr todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambularios</option>
+                                                        <option value="InPatients">Pacienetes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -99,12 +99,13 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Employee Name</th>
-                                                <th data-toggle="true">Employee Number</th>
-                                                <th data-hide="phone">Payroll Number</th>
-                                                <th data-hide="phone">Date Posted</th>
-                                                <th data-hide="phone">Employee Salary </th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre de empleado</th>
+                                                <th data-toggle="true">Número de empleado</th>
+                                                <th data-hide="phone">Número de nómina</th>
+                                                <th data-hide="phone">Fecha de publicación</th>
+                                                <th data-hide="phone">
+                                                Salario del empleado </th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -131,7 +132,8 @@
                                                  
                                                     <td>
                                                        <!-- <a href="his_admin_manage_payrolls.php?delete_pay_number=<?php echo $row->pay_number;?>" class="badge badge-danger"><i class="fas fa-trash"></i> Delete</a> -->
-                                                        <a href="his_admin_generate_single_employee_payroll.php?pay_number=<?php echo $row->pay_number;?>&&pay_doc_number=<?php echo $row->pay_doc_number;?>" class="badge badge-success"><i class="fas fa-file-invoice-dollar "></i> Generate Payroll</a>
+                                                        <a href="his_admin_generate_single_employee_payroll.php?pay_number=<?php echo $row->pay_number;?>&&pay_doc_number=<?php echo $row->pay_doc_number;?>" class="badge badge-success"><i class="fas fa-file-invoice-dollar "></i> 
+                                                        Salario del empleado</a>
 
                                                     </td>
                                                 </tr>

@@ -26,10 +26,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Laboratory Equipment Updated";
+				$success = "Equipo de laboratorio actualizado";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -81,12 +81,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Manage Equipment</a></li>
-                                                <li class="breadcrumb-item active">Update Equipment</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Administrar equipos</a></li>
+                                                <li class="breadcrumb-item active">Actualizar equipos</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Update  Equipment Details</h4>
+                                        <h4 class="page-title">Actualizar detlles de equipo</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -96,44 +96,44 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llenar todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputEmail4" class="col-form-label">Equipment Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre del equipo</label>
                                                         <input type="text" required="required" value="<?php echo $row->eqp_name;?>" name="eqp_name" class="form-control" id="inputEmail4" >
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Equipment Vendor</label>
+                                                        <label for="inputPassword4" class="col-form-label">Proveedor de equipos</label>
                                                         <input required="required" type="text" value="<?php echo $row->eqp_vendor;?>" name="eqp_vendor" class="form-control"  id="inputPassword4">
                                                     </div>
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Equipment Quantity </label>
+                                                        <label for="inputPassword4" class="col-form-label">Cantidad de equipos</label>
                                                         <input required="required" type="text" value = "<?php echo $row->eqp_qty;?>" name="eqp_qty" class="form-control"  id="inputPassword4">
                                                     </div>
                                                     <div class="form-group col-md-4" style="display:none">
-                                                        <label for="inputPassword4" class="col-form-label">Equipment Department</label>
+                                                        <label for="inputPassword4" class="col-form-label">Departamento de equipos</label>
                                                         <input required="required" type="text" value="Laboratory" name="eqp_dept" class="form-control"  id="inputPassword4">
                                                     </div>
                                                     <div class="form-group col-md-6" style="display:none">
-                                                        <label for="inputPassword4" class="col-form-label">Equipment Status</label>
+                                                        <label for="inputPassword4" class="col-form-label">Estado de equipo</label>
                                                         <input required="required" type="text" value="Functioning" name="eqp_status" class="form-control"  id="inputPassword4">
                                                     </div>
                                                     
                                                 </div>
 
                                                 <div class="form-group " >
-                                                        <label for="inputPassword4" class="col-form-label">Equipment Status</label>
+                                                        <label for="inputPassword4" class="col-form-label">Estado de equipo</label>
                                                         <input required="required" type="text" value="<?php echo $row->eqp_status;?>" name="eqp_status" class="form-control"  id="inputPassword4">
                                                 </div>
 
                                                 <div class="form-group" style="style:display-none">
-                                                    <label for="inputAddress" class="col-form-label">Pharmaceutical Category Description</label>
+                                                    <label for="inputAddress" class="col-form-label">Descripción de categoría farmacéutica</label>
                                                     <textarea required="required" type="text" class="form-control" name="eqp_desc" id="editor"><?php echo $row->eqp_desc;?></textarea>
                                                 </div>
 
-                                            <button type="submit" name="update_equipments" class="ladda-button btn btn-success" data-style="expand-right">Update Equipment</button>
+                                            <button type="submit" name="update_equipments" class="ladda-button btn btn-success" data-style="expand-right">Actualizar equipo</button>
 
                                             </form>
                                         

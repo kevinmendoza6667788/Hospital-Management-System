@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Prescription Records Deleted";
+            $success = "Registros de recetas eliminados";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarde";
             }
     }
 ?>
@@ -58,12 +58,14 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmacy</a></li>
-                                            <li class="breadcrumb-item active">Manage Prescriptions</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">
+                                            Farmacia</a></li>
+                                            <li class="breadcrumb-item active">Administrar recetas</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Prescriptions</h4>
+                                    <h4 class="page-title">
+                                    Administrar recetas</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +80,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes ambulatorios</option>
+                                                        <option value="InPatients">Pacientes internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,13 +98,13 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Address</th>
-                                                <th data-hide="phone">Ailment</th>
-                                                <th data-hide="phone">Age</th>
-                                                <th data-hide="phone">Category</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre del paciente</th>
+                                                <th data-hide="phone">Número del paciente</th>
+                                                <th data-hide="phone">Dirección</th>
+                                                <th data-hide="phone">Enfermedad</th>
+                                                <th data-hide="phone">Edad</th>
+                                                <th data-hide="phone">Categoría</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -130,9 +132,9 @@
                                                     <td><?php echo $row->pres_pat_age;?> Years</td>
                                                     <td><?php echo $row->pres_pat_type;?></td>
                                                     <td>
-                                                        <a href="his_admin_view_single_pres.php?pres_number=<?php echo $row->pres_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> View</a>
+                                                        <a href="his_admin_view_single_pres.php?pres_number=<?php echo $row->pres_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> Vista</a>
                                                         <a href="his_admin_upate_single_pres.php?pres_number=<?php echo $row->pres_number;?>" class="badge badge-warning"><i class="fas fa-eye-dropper "></i> Update</a>
-                                                        <a href="his_admin_manage_presc.php?delete_pres_number=<?php echo $row->pres_number;?>" class="badge badge-danger"><i class=" fas fa-trash-alt "></i> Delete</a>
+                                                        <a href="his_admin_manage_presc.php?delete_pres_number=<?php echo $row->pres_number;?>" class="badge badge-danger"><i class=" fas fa-trash-alt "></i> Eliminar</a>
 
                                                     </td>
                                                 </tr>

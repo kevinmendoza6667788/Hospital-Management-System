@@ -24,10 +24,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Patient Medical Record Addded";
+				$success = "Registro médico del paciente agregado";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -79,12 +79,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Medical Records</a></li>
-                                                <li class="breadcrumb-item active">Add Medical Record</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Registros médicos</a></li>
+                                                <li class="breadcrumb-item active">Agregar registro médico</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Add Medical Record</h4>
+                                        <h4 class="page-title">Agregar registro médico</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -94,23 +94,24 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llene todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre del paciente</label>
                                                         <input type="text" required="required" readonly name="mdr_pat_name" value="<?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?>" class="form-control" id="inputEmail4" placeholder="Patient's Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Age</label>
+                                                        <label for="inputPassword4" class="col-form-label">
+                                                        Edad del paciente</label>
                                                         <input required="required" type="text" readonly name="mdr_pat_age" value="<?php echo $row->pat_age;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Address</label>
+                                                        <label for="inputPassword4" class="col-form-label">Dirección del paciente</label>
                                                         <input required="required" type="text" readonly name="mdr_pat_adr" value="<?php echo $row->pat_addr;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -119,12 +120,14 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Number</label>
+                                                        <label for="inputEmail4" class="col-form-label">
+                                                        Número de paciente</label>
                                                         <input type="text" required="required" readonly name="mdr_pat_number" value="<?php echo $row->pat_number;?>" class="form-control" id="inputEmail4" placeholder="DD/MM/YYYY">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Ailment</label>
+                                                        <label for="inputPassword4" class="col-form-label">
+                                                        Dolencia del paciente</label>
                                                         <input required="required" type="text" readonly name="mdr_pat_ailment" value="<?php echo $row->pat_ailment;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                     </div>
                                                 </div>
@@ -138,7 +141,7 @@
                                                             $length = 5;    
                                                             $pres_no =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                         ?>
-                                                        <label for="inputZip" class="col-form-label">Medical Record Number</label>
+                                                        <label for="inputZip" class="col-form-label">Número de historia clínica</label>
                                                         <input type="text" name="mdr_number" value="<?php echo $pres_no;?>" class="form-control" id="inputZip">
                                                     </div>
                                                 </div>
@@ -154,12 +157,12 @@
                                                     {
                                                 ?>
                                                 <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Patient's Prescription</label>
+                                                        <label for="inputAddress" class="col-form-label">Prescripción del paciente</label>
                                                         <textarea required="required"  type="text" class="form-control" name="mdr_pat_prescr" id="editor"><?php echo $row->pres_ins;?> </textarea>
                                                 </div>
                                                 <?php }?>
 
-                                                <button type="submit" name="add_patient_mdr" class="ladda-button btn btn-primary" data-style="expand-right">Add Patient Medical Record</button>
+                                                <button type="submit" name="add_patient_mdr" class="ladda-button btn btn-primary" data-style="expand-right">Agregar registro médico del paciente</button>
 
                                             </form>
                                             <!--End Patient Form-->

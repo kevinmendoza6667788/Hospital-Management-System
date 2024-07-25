@@ -24,10 +24,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Patient Prescription Updated";
+				$success = "Prescripción del la paciente actualizada";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -79,12 +79,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmacy</a></li>
-                                                <li class="breadcrumb-item active">Manage Prescriptions</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Farmacia</a></li>
+                                                <li class="breadcrumb-item active">Administrar prescripciones</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Update Patient Prescription</h4>
+                                        <h4 class="page-title">Actualizar prescripción del paciente</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -94,18 +94,18 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llenar todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre del paciente</label>
                                                         <input type="text" required="required" readonly name="pres_pat_name" value="<?php echo $row->pres_pat_name;?>" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Age</label>
+                                                        <label for="inputPassword4" class="col-form-label">Edad del paciente</label>
                                                         <input required="required" type="text" readonly name="pres_pat_age" value="<?php echo $row->pres_pat_age;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -113,30 +113,30 @@
 
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Address</label>
+                                                        <label for="inputPassword4" class="col-form-label">Dirección del paciente</label>
                                                         <input required="required" type="text" readonly name="pres_pat_addr" value="<?php echo $row->pres_pat_addr;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Type</label>
+                                                        <label for="inputPassword4" class="col-form-label">Tipo de paciente</label>
                                                         <input required="required" readonly type="text" name="pres_pat_type" value="<?php echo $row->pres_pat_type;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                     </div>
 
                                                 </div>
 
                                                 <div class="form-group ">
-                                                        <label for="inputCity" class="col-form-label">Patient Ailment</label>
+                                                        <label for="inputCity" class="col-form-label">Dolencia de paciente</label>
                                                         <input required="required" type="text" value="<?php echo $row->pres_pat_ailment;?>" name="pres_pat_ailment" class="form-control" id="inputCity">
                                                 </div>
                                                 <hr>
                                                 
 
                                                 <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Prescription</label>
+                                                        <label for="inputAddress" class="col-form-label">Prescripción</label>
                                                         <textarea required="required"  type="text" class="form-control" name="pres_ins" id="editor"><?php echo $row->pres_ins;?></textarea>
                                                 </div>
 
-                                                <button type="submit" name="update_patient_presc" class="ladda-button btn btn-primary" data-style="expand-right">Update Patient Prescription</button>
+                                                <button type="submit" name="update_patient_presc" class="ladda-button btn btn-primary" data-style="expand-right">Actualziar prescripción del paciente</button>
 
                                             </form>
                                             <!--End Patient Form-->

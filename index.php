@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required Meta Tags -->
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Page Title -->
-    <title>Gestión de Sistema Hospitalario</title>
+    <title>Sistema de Gestión Hospitalaria</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
     <!-- CSS Files -->
@@ -34,9 +33,9 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.php">Inicio</a></li>
-                        <li><a href="backend/doc/index.php">Doctor Login</a></li>
-                        <li><a href="backend/admin/index.php">Administrador Login</a></li>
+                        <li class="menu-active"><a href="index.php">Home</a></li>
+                        <li><a href="backend/doc/index.php">Login Doctor</a></li>
+                        <li><a href="backend/admin/index.php">Login Administrador/a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->		    		
                 </div>
@@ -51,7 +50,7 @@
                 <div class="col-lg-8">
                     <h4>Cuidando una vida mejor</h4>
                     <h1>Liderando el camino en la excelencia médica</h1>
-                    <p>HMS recibe el premio como uno de los mejores sistemas de gestión hospitalaria, que puede integrar todos los sistemas, procesos y máquinas de HIS en un sistema de información inteligente para obtener eficiencia operativa y ayudar a los hospitales en el proceso de toma de decisiones a través de MIS y análisis..</p>
+                    <p>HMS recibe el premio como uno de los mejores sistemas de gestión hospitalaria, que puede integrar todos los sistemas, procesos y máquinas de HIS en un sistema de información inteligente para obtener eficiencia operativa y ayudar a los hospitales en el proceso de toma de decisiones a través de MIS y análisis.</p>
                 </div>
             </div>
         </div>

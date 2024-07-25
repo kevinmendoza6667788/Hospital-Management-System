@@ -67,12 +67,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
+                                            <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Employee</a></li>
-                                            <li class="breadcrumb-item active">Add Employee</li>
+                                            <li class="breadcrumb-item active">Agregar empleado</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Add Employee Details</h4>
+                                    <h4 class="page-title">Agregar detalles del empleado</h4>
                                 </div>
                             </div>
                         </div>     
@@ -82,16 +82,16 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Llenar todo el campo</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">First Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombres</label>
                                                     <input type="text" required="required" name="doc_fname" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Last Name</label>
+                                                    <label for="inputPassword4" class="col-form-label">Apellido</label>
                                                     <input required="required" type="text" name="doc_lname" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
@@ -101,24 +101,24 @@
                                                         $length = 5;    
                                                         $patient_number =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                     ?>
-                                                    <label for="inputZip" class="col-form-label">Doctor Number</label>
+                                                    <label for="inputZip" class="col-form-label">Número de médico</label>
                                                     <input type="text" name="doc_number" value="<?php echo $patient_number;?>" class="form-control" id="inputZip">
                                                 </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Email</label>
+                                                <label for="inputAddress" class="col-form-label">Correo</label>
                                                 <input required="required" type="email" class="form-control" name="doc_email" id="inputAddress">
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Password</label>
+                                                    <label for="inputCity" class="col-form-label">Contraseña</label>
                                                     <input required="required" type="password" name="doc_pwd" class="form-control" id="inputCity">
                                                 </div>
                                                 
                                             </div>
 
-                                            <button type="submit" name="add_doc" class="ladda-button btn btn-success" data-style="expand-right">Add Employee</button>
+                                            <button type="submit" name="add_doc" class="ladda-button btn btn-success" data-style="expand-right">Agregar empleado</button>
 
                                         </form>
                                         <!--End Patient Form-->

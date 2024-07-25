@@ -15,11 +15,11 @@
   
           if($stmt)
           {
-            $success = "Equipment Deleted";
+            $success = "Equipo eliminado";
           }
             else
             {
-                $err = "Try Again Later";
+                $err = "Vuelva a intentarlo más tarde";
             }
     }
 ?>
@@ -58,12 +58,13 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratory</a></li>
-                                            <li class="breadcrumb-item active">Manage Laboratory Equipment</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratorio</a></li>
+                                            <li class="breadcrumb-item active">
+                                            Administrar equipos de laboratorio</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Laboratory Equipments</h4>
+                                    <h4 class="page-title">Administrar equipos de laboratorio</h4>
                                 </div>
                             </div>
                         </div>     
@@ -78,10 +79,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostra todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacienets ambulatorios</option>
+                                                        <option value="InPatients">Pacienets internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -96,12 +97,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Name</th>
-                                                <th data-hide="phone">Vendor</th>
-                                                <th data-hide="phone">Barcode</th>
-                                                <th data-hide="phone">Status</th>
-                                                <th data-hide="phone">Quantity</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre</th>
+                                                <th data-hide="phone">Proveedor</th>
+                                                <th data-hide="phone">Codigo de barras</th>
+                                                <th data-hide="phone">Estado</th>
+                                                <th data-hide="phone">Cantidad</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -128,8 +129,8 @@
                                                     <td><?php echo $row->eqp_qty;?></td>
                                                     <td>
                                                         <a href="his_admin_view_single_eqp.php?eqp_code=<?php echo $row->eqp_code;?>" class="badge badge-success"><i class="far fa-eye "></i> View</a>
-                                                        <a href="his_admin_update_single_eqp.php?eqp_code=<?php echo $row->eqp_code;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Update</a>
-                                                        <a href="his_admin_manage_lab_equipment.php?delete_eqp=<?php echo $row->eqp_code;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Delete</a>
+                                                        <a href="his_admin_update_single_eqp.php?eqp_code=<?php echo $row->eqp_code;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Actualizar</a>
+                                                        <a href="his_admin_manage_lab_equipment.php?delete_eqp=<?php echo $row->eqp_code;?>" class="badge badge-danger"><i class="fas fa-trash-alt "></i> Eliminar</a>
 
 
                                                     </td>

@@ -79,12 +79,13 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratory</a></li>
-                                                <li class="breadcrumb-item active">Capture Vitals</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">
+                                                Laboratorio</a></li>
+                                                <li class="breadcrumb-item active">Capturar signos vitales</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Capture <?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?> Vitals</h4>
+                                        <h4 class="page-title">Captura <?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?> Vitales</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -94,18 +95,19 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Llene todos los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Employee  Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">
+                                                        Nombre de empleado</label>
                                                         <input type="text" required="required" readonly name="" value="<?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?>" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Employee Department</label>
+                                                        <label for="inputPassword4" class="col-form-label">Departamento de empleados</label>
                                                         <input required="required" type="text" readonly name="" value="<?php echo $row->doc_dept;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -114,7 +116,7 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-12">
-                                                        <label for="inputEmail4" class="col-form-label">Employee Number</label>
+                                                        <label for="inputEmail4" class="col-form-label">Número de empleado</label>
                                                         <input type="text" required="required" readonly name="vit_pat_number" value="<?php echo $row->doc_number;?>" class="form-control" id="inputEmail4" placeholder="DD/MM/YYYY">
                                                     </div>
 
@@ -131,7 +133,8 @@
                                                             $length = 5;    
                                                             $vit_no =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                         ?>
-                                                        <label for="inputZip" class="col-form-label">Vital Number</label>
+                                                        <label for="inputZip" class="col-form-label">
+                                                        Número vital</label>
                                                         <input type="text" name="vit_number" value="<?php echo $vit_no;?>" class="form-control" id="inputZip">
                                                     </div>
                                                 </div>
@@ -139,28 +142,30 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Body Temperature °C</label>
+                                                        <label for="inputEmail4" class="col-form-label">
+                                                        Temperatura corporal del paciente °C</label>
                                                         <input type="text" required="required"  name="vit_bodytemp"class="form-control" id="inputEmail4" placeholder="°C">
                                                     </div>
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Heart Pulse/Beat BPM</label>
+                                                        <label for="inputPassword4" class="col-form-label">Pulso/latido del corazón del paciente BPM</label>
                                                         <input required="required" type="text"  name="vit_heartpulse"  class="form-control"  id="inputPassword4" placeholder="HeartBeats Per Minute ">
                                                     </div>
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Respiratory Rate bpm</label>
+                                                        <label for="inputPassword4" class="col-form-label">Frecuencia respiratoria del paciente lpm</label>
                                                         <input required="required" type="text"  name="vit_resprate"  class="form-control"  id="inputPassword4" placeholder="Breathes Per Minute">
                                                     </div>
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Blood Pressure mmHg</label>
+                                                        <label for="inputPassword4" class="col-form-label">
+                                                        Presión arterial del paciente mmHg</label>
                                                         <input required="required" type="text"  name="vit_bloodpress"  class="form-control"  id="inputPassword4" placeholder="mmHg">
                                                     </div>
 
                                                 </div>
 
-                                                <button type="submit" name="add_emp_vitals" class="ladda-button btn btn-success" data-style="expand-right">Add Vitals</button>
+                                                <button type="submit" name="add_emp_vitals" class="ladda-button btn btn-success" data-style="expand-right">Agregar signos vitales</button>
 
                                             </form>
                                             <!--End Patient Form-->

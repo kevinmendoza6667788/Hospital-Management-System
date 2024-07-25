@@ -20,10 +20,10 @@
 			//declare a varible which will be passed to alert function
 			if($stmt)
 			{
-				$success = "Created Account Proceed To Log In";
+				$success = "Cuenta creada Proceda a iniciar sesión";
 			}
 			else {
-				$err = "Please Try Again Or Try Later";
+				$err = "Inténtelo de nuevo o inténtelo más tarde";
 			}
 			
 			
@@ -36,7 +36,7 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Hospital Management Information System -A Super Responsive Information System</title>
+        <title>Sistema de información de gestión hospitalaria: un sistema de información súper receptivo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -56,7 +56,7 @@
                 <script>
                             setTimeout(function () 
                             { 
-                                swal("Success","<?php echo $success;?>","success");
+                                swal("Success","<?php echo $success;?>","Éxito");
                             },
                                 100);
                 </script>
@@ -68,7 +68,7 @@
                 <script>
                             setTimeout(function () 
                             { 
-                                swal("Failed","<?php echo $err;?>","Failed");
+                                swal("Failed","<?php echo $err;?>","Fallido");
                             },
                                 100);
                 </script>
@@ -91,30 +91,31 @@
                                     <a href="his_admin_register.php">
                                         <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Don't have an account? Create your account, it takes less than a minute</p>
+                                    <p class="text-muted mb-4 mt-3">
+                                    ¿No tienes una cuenta? Crea tu cuenta, te llevará menos de un minuto</p>
                                 </div>
 
                                 <form  method='post'>
 
                                     <div class="form-group">
-                                        <label for="fullname">First Name</label>
+                                        <label for="fullname">Nombre</label>
                                         <input class="form-control" type="text"  name = "ad_fname" id="fullname" placeholder="Enter your name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="fullname">Last Name</label>
+                                        <label for="fullname">Apellido</label>
                                         <input class="form-control" type="text" name="ad_lname" id="fullname" placeholder="Enter your name" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="emailaddress">Email address</label>
+                                        <label for="emailaddress">Dirección de correo electronico</label>
                                         <input class="form-control" name="ad_email" type="email" id="emailaddress" required placeholder="Enter your email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="password">Password</label>
+                                        <label for="password">Contraseña</label>
                                         <input class="form-control" name="ad_pwd" type="password" required id="password" placeholder="Enter your password">
                                     </div>
                                     
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-primary btn-block" name="admin_sup" type="submit"> Sign Up </button>
+                                        <button class="btn btn-primary btn-block" name="admin_sup" type="submit"> Inscribirse </button>
                                     </div>
 
                                 </form>
@@ -144,7 +145,8 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-white-50">Already have account?  <a href="index.php" class="text-white ml-1"><b>Sign In</b></a></p>
+                                <p class="text-white-50">
+                                ¿Ya tienes cuenta?  <a href="index.php" class="text-white ml-1"><b>Sign In</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->

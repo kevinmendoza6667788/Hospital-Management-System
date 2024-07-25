@@ -40,12 +40,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Medical Records</a></li>
-                                            <li class="breadcrumb-item active">Add Medical Records</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Registros medicos</a></li>
+                                            <li class="breadcrumb-item active">Agregar registros medicos</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Patient Details</h4>
+                                    <h4 class="page-title">Detalles del paciente</h4>
                                 </div>
                             </div>
                         </div>     
@@ -60,10 +60,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacienets ambulatorios</option>
+                                                        <option value="InPatients">Pacienets internos</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,13 +78,13 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Name</th>
-                                                <th data-hide="phone">Number</th>
-                                                <th data-hide="phone">Address</th>
-                                                <th data-hide="phone">Phone</th>
-                                                <th data-hide="phone">Age</th>
-                                                <th data-hide="phone">Category</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre</th>
+                                                <th data-hide="phone">Número</th>
+                                                <th data-hide="phone">Dirección</th>
+                                                <th data-hide="phone">Telefono</th>
+                                                <th data-hide="phone">Edad</th>
+                                                <th data-hide="phone">Categoría</th>
+                                                <th data-hide="phone">Acción</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -112,7 +112,7 @@
                                                     <td><?php echo $row->pat_age;?> Years</td>
                                                     <td><?php echo $row->pat_type;?></td>
                                                     
-                                                    <td><a href="his_admin_add_single_patient_medical_record.php?pat_number=<?php echo $row->pat_number;?>" class="badge badge-success"><i class=" fas fa-file-signature"></i> Add Medical Record</a></td>
+                                                    <td><a href="his_admin_add_single_patient_medical_record.php?pat_number=<?php echo $row->pat_number;?>" class="badge badge-success"><i class=" fas fa-file-signature"></i> Agregar registro médico</a></td>
                                                 </tr>
                                                 </tbody>
                                             <?php  $cnt = $cnt +1 ; }?>
