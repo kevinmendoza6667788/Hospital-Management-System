@@ -68,12 +68,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Add Pharmaceutical</li>
+                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Productos Farmacéuticos</a></li>
+                                            <li class="breadcrumb-item active">Agregar producto farmacéutico</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Create A Pharmaceutical</h4>
+                                    <h4 class="page-title">Crear un producto farmacéutico</h4>
                                 </div>
                             </div>
                         </div>     
@@ -83,22 +83,22 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Completar los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Pharmaceutical Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre farmacéutico</label>
                                                     <input type="text" required="required" name="phar_name" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Pharmaceutical Quantity(Cartons)</label>
+                                                    <label for="inputPassword4" class="col-form-label">Cantidad farmacéutico (cartones)</label>
                                                     <input required="required" type="text" name="phar_qty" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                             <div class="form-group col-md-6">
-                                                    <label for="inputState" class="col-form-label">Pharmaceutical Category</label>
+                                                    <label for="inputState" class="col-form-label">Categoria farmacéutico</label>
                                                     <select id="inputState" required="required" name="phar_cat" class="form-control">
                                                     <!--Fetch All Pharmaceutical Categories-->
                                                     <?php
@@ -116,7 +116,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputState" class="col-form-label">Pharmaceutical Vendor</label>
+                                                    <label for="inputState" class="col-form-label">Proveedor farmacéutico</label>
                                                     <select id="inputState" required="required" name="phar_vendor" class="form-control">
                                                     <?php
                                                     
@@ -137,7 +137,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                    <label for="inputPassword4" class="col-form-label">Pharmaceutical Barcode(EAN-8)</label>
+                                                    <label for="inputPassword4" class="col-form-label">Código de barras farmacéutico (EAN-8)</label>
                                                     <?php 
                                                         $length = 10;    
                                                         $phar_bcode =  substr(str_shuffle('0123456789'),1,$length);
@@ -146,7 +146,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Pharmaceutical Description</label>
+                                                <label for="inputAddress" class="col-form-label">Descripcion farmacéutico</label>
                                                 <textarea required="required" type="text" class="form-control" name="phar_desc" id="editor"></textarea>
                                             </div>
 

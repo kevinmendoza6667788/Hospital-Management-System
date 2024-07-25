@@ -50,12 +50,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Reporting</a></li>
-                                                <li class="breadcrumb-item active">Accounts</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Reportes</a></li>
+                                                <li class="breadcrumb-item active">Cuentas</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title"><?php echo $row->acc_number;?> Details</h4>
+                                        <h4 class="page-title"><?php echo $row->acc_number;?> Detalles</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -77,15 +77,15 @@
                                             </div> <!-- end col -->
                                             <div class="col-xl-7">
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Account Number :  <?php echo $row->acc_number;?></h2>
+                                                    <h2 class="mb-3">Numero de cuenta :  <?php echo $row->acc_number;?></h2>
                                                     <hr>
-                                                    <h4 class="text-danger"> Account Name : <?php echo $row->acc_name;?></h6>
+                                                    <h4 class="text-danger"> Nombre de cuenta : <?php echo $row->acc_name;?></h6>
                                                     <hr>
-                                                    <h4 class="text-danger">Account Amount : $ <?php echo $row->acc_amount;?> </h6>
+                                                    <h4 class="text-danger">Monto de cuenta : $ <?php echo $row->acc_amount;?> </h6>
                                                     <hr>
-                                                    <h4 class="text-danger">Account Type :   <?php echo $row->acc_type;?> </h6>
+                                                    <h4 class="text-danger">Tipo de cuenta :   <?php echo $row->acc_type;?> </h6>
                                                     <hr>
-                                                    <h4 class="align-centre">Account Description</h6>
+                                                    <h4 class="align-centre">Descripcion de cuenta</h6>
                                                     <hr>
                                                     <p class="text-muted mb-4">
                                                         <?php echo $row->acc_desc;?>

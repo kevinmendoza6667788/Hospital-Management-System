@@ -46,7 +46,7 @@
 
                                     <h3>See you again !</h3>
 
-                                    <p class="text-muted font-13"> You are now successfully sign out. </p>
+                                    <p class="text-muted font-13"> Ahora has cerrado sesión correctamente. </p>
                                 </div>
 
                             </div> <!-- end card-body -->
@@ -55,7 +55,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-white-50">Back to <a href="index.php" class="text-white ml-1"><b>Log In</b></a> OR <a href="../../index.php" class="text-white ml-1"><b>HomePage</b></a></p>
+                                <p class="text-white-50"> Volver a <a href="index.php" class="text-white ml-1"><b>Log In</b></a> o <a href="../../index.php" class="text-white ml-1"><b>Inicio</b></a></p>
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->

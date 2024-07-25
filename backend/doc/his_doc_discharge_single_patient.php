@@ -74,12 +74,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Patients</a></li>
-                                            <li class="breadcrumb-item active">Discharge Patients</li>
+                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</P></a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pacientes</a></li>
+                                            <li class="breadcrumb-item active">Descargar pacientes</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Discharge Patient</h4>
+                                    <h4 class="page-title">Descargar pacientes</h4>
                                 </div>
                             </div>
                         </div>     
@@ -101,27 +101,27 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Completar campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">First Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Primer nombre</label>
                                                     <input type="text" required="required" value="<?php echo $row->pat_fname;?>" name="pat_fname" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Last Name</label>
+                                                    <label for="inputPassword4" class="col-form-label">Apellidos</label>
                                                     <input required="required" type="text" value="<?php echo $row->pat_lname;?>" name="pat_lname" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                 </div>
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Date Of Birth</label>
+                                                    <label for="inputEmail4" class="col-form-label">Fecha de cumpleaños</label>
                                                     <input type="text" required="required" value="<?php echo $row->pat_dob;?>" name="pat_dob" class="form-control" id="inputEmail4" placeholder="DD/MM/YYYY">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Age</label>
+                                                    <label for="inputPassword4" class="col-form-label">Edad</label>
                                                     <input required="required" type="text" value="<?php echo $row->pat_age;?>" name="pat_age" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                 </div>
                                             </div>
@@ -129,17 +129,17 @@
                                             <div class="form-row">
 
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Mobile Number</label>
+                                                    <label for="inputCity" class="col-form-label">Numero de telefono</label>
                                                     <input required="required" type="text" value="<?php echo $row->pat_phone;?>" name="pat_phone" class="form-control" id="inputCity">
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity" class="col-form-label">Address</label>
+                                                    <label for="inputCity" class="col-form-label">Direccion</label>
                                                     <input required="required" type="text" value="<?php echo $row->pat_addr;?>" name="pat_phone" class="form-control" id="inputCity">
                                                 </div>
 
                                                 <div class="form-group col-md-6" style="display:none">
-                                                    <label for="inputCity" class="col-form-label">Mobile Number</label>
+                                                    <label for="inputCity" class="col-form-label">Numero de telefono</label>
                                                     <input required="required" type="text" name="pat_discharge_status" value="Discharged" class="form-control" id="inputCity">
                                                 </div>
 
@@ -147,14 +147,14 @@
                                                 <div class="form-group col-md-6" style="display:none">
                                                     <label for="inputState" class="col-form-label"></label>
                                                     <select id="inputState" required="required" name="pat_type" class="form-control">
-                                                        <option>Choose</option>
-                                                        <option>InPatient</option>
-                                                        <option>OutPatient</option>
+                                                        <option>Elegir</option>
+                                                        <option>Paciente/entrada</option>
+                                                        <option>Paciente/salida</option>
                                                     </select>
                                                 </div>
                                             </div>
 
-                                            <button type="submit" name="discharge_patient" class="ladda-button btn btn-success" data-style="expand-right">Discharge</button>
+                                            <button type="submit" name="discharge_patient" class="ladda-button btn btn-success" data-style="expand-right">Descargar</button>
 
                                         </form>
                                         <!--End Patient Form-->

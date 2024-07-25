@@ -40,9 +40,9 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Inventory</a></li>
-                                            <li class="breadcrumb-item active">Equipments | Assets Inventory</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Inventario</a></li>
+                                            <li class="breadcrumb-item active">Equipos | Activos en inventorio</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -54,16 +54,16 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="card-box">
-                                    <h4 class="header-title">Assets | Equipments Inventory</h4>
+                                    <h4 class="header-title">Equipos | Activos en inventario</h4>
                                     <div class="mb-2">
                                         <div class="row">
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargar</option>
+                                                        <option value="OutPatients">Pacientes/salida</option>
+                                                        <option value="InPatients">Pacientes/entrada</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,12 +78,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Equipment Name</th>
-                                                <th data-hide="phone">Equipment Code</th>
-                                                <th data-hide="phone">Equipment Vendor</th>
-                                                <th data-hide="phone">Equipment Department</th>
-                                                <th data-hide="phone">Equipment Quantity</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre equipo</th>
+                                                <th data-hide="phone">Codigo equipo</th>
+                                                <th data-hide="phone">Proveedor equipo</th>
+                                                <th data-hide="phone">Departamento equipo</th>
+                                                <th data-hide="phone">Cantidad equipo</th>
+                                                <th data-hide="phone">Accion</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -109,7 +109,7 @@
                                                     <td><?php echo $row->eqp_dept;?></td>
                                                     <td><?php echo $row->eqp_qty;?></td>
                                                     <td>
-                                                        <a href="his_doc_view_single_eqp.php?eqp_code=<?php echo $row->eqp_code;?>" class="badge badge-success"><i class="far fa-eye "></i> View</a>
+                                                        <a href="his_doc_view_single_eqp.php?eqp_code=<?php echo $row->eqp_code;?>" class="badge badge-success"><i class="far fa-eye "></i> Ver</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

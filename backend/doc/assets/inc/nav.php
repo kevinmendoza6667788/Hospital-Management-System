@@ -39,7 +39,7 @@
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
                     <div class="dropdown-header noti-title">
-                        <h6 class="text-overflow m-0">Welcome !</h6>
+                        <h6 class="text-overflow m-0">Bienvenido !</h6>
                     </div>
 
                     <!-- item-->
@@ -50,7 +50,7 @@
 
                     <a href="his_doc_update-account.php" class="dropdown-item notify-item">
                         <i class="fas fa-user-tag"></i>
-                        <span>Update Account</span>
+                        <span>Actualizar cuenta</span>
                     </a>
 
 
@@ -59,7 +59,7 @@
                     <!-- item-->
                     <a href="his_doc_logout_partial.php" class="dropdown-item notify-item">
                         <i class="fe-log-out"></i>
-                        <span>Logout</span>
+                        <span>Salir</span>
                     </a>
 
                 </div>
@@ -71,7 +71,7 @@
 
         <!-- LOGO -->
         <div class="logo-box">
-            <a href="his_admin_dashboard.php" class="logo text-center">
+            <a href="his_doc_dashboard.php" class="logo text-center">
                 <span class="logo-lg">
                     <img src="assets/images/logo-light.png" alt="" height="18">
                     <!-- <span class="logo-lg-text-light">UBold</span> -->
@@ -92,7 +92,7 @@
 
             <li class="dropdown d-none d-lg-block">
                 <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    Create New
+                    Crear nuevo
                     <i class="mdi mdi-chevron-down"></i> 
                 </a>
                 <div class="dropdown-menu">
@@ -101,7 +101,7 @@
                     <!-- item-->
                     <a href="his_doc_register_patient.php" class="dropdown-item">
                         <i class="fe-activity mr-1"></i>
-                        <span>Patient</span>
+                        <span>Paciente</span>
                     </a>
 
 
@@ -109,7 +109,7 @@
                     <!-- item-->
                     <a href="his_doc_lab_report.php" class="dropdown-item">
                         <i class="fe-hard-drive mr-1"></i>
-                        <span>Laboratory Report</span>
+                        <span>Reporte de Laboratorio</span>
                     </a>
 
                     

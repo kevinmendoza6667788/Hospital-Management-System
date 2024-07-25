@@ -68,12 +68,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Patients</a></li>
-                                            <li class="breadcrumb-item active">Transfer Patients</li>
+                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Paciente</a></li>
+                                            <li class="breadcrumb-item active">Transferencia de paciente</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Transfer Patient To A Refferal Facility</h4>
+                                    <h4 class="page-title">Transferir al paciente a un centro de referencia</h4>
                                 </div>
                             </div>
                         </div>     
@@ -95,12 +95,12 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Completar los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputEmail4" class="col-form-label">Patient Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre paciente</label>
                                                     <input type="text" required="required" value="<?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?>" name="t_pat_name" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                 </div>
                                                 
@@ -108,25 +108,25 @@
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Refferal Hospital</label>
+                                                    <label for="inputEmail4" class="col-form-label">Hospital referencia</label>
                                                     <input type="text" required="required"  name="t_hospital" class="form-control" id="inputEmail4" placeholder="Refferal/Transfer Hospital">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputPassword4" class="col-form-label">Transfer Date</label>
+                                                    <label for="inputPassword4" class="col-form-label">Fecha transferencia</label>
                                                     <input required="required" type="date"  name="t_date" class="form-control"  id="inputPassword4" placeholder="DD/MM/YYYY">
                                                 </div>
                                                 <div class="form-group col-md-6" style="display:none">
-                                                    <label for="inputPassword4" class="col-form-label">Patient Number </label>
+                                                    <label for="inputPassword4" class="col-form-label">ID paciente </label>
                                                     <input required="required" type="text"  name="t_pat_number" value="<?php echo $row->pat_number;?>" class="form-control"  id="inputPassword4" placeholder="">
                                                 </div>
                                             </div>
 
                                             <div class="form-group" style="display:none">
-                                                <label for="inputAddress" class="col-form-label">Transfer Status</label>
+                                                <label for="inputAddress" class="col-form-label">Estado de transferencia</label>
                                                 <input required="required" type="text" value="Success" class="form-control" name="t_status" id="inputAddress" placeholder="Patient's Addresss">
                                             </div>
 
-                                            <button type="submit" name="transfer_patient" class="ladda-button btn btn-success" data-style="expand-right">Transfer Patient</button>
+                                            <button type="submit" name="transfer_patient" class="ladda-button btn btn-success" data-style="expand-right">Transferencia de paciente</button>
 
                                         </form>
                                         <!--End Patient Form-->

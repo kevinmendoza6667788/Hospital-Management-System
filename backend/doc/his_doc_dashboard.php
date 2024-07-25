@@ -41,7 +41,7 @@
                             <div class="col-12">
                                 <div class="page-title-box">
                                     
-                                    <h4 class="page-title">Hospital Management Information System Dashboard</h4>
+                                    <h4 class="page-title">Panel de Sistema de Gestion Hospitalaria</h4>
                                 </div>
                             </div>
                         </div>     
@@ -70,7 +70,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $patient;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Patients</p>
+                                                <p class="text-muted mb-1 text-truncate">Pacientes</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -102,7 +102,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $assets;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Corporation Assets</p>
+                                                <p class="text-muted mb-1 text-truncate">Activos corporacion</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -133,7 +133,7 @@
                                                     $stmt->close();
                                                 ?>
                                                 <h3 class="text-dark mt-1"><span data-plugin="counterup"><?php echo $phar;?></span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Pharmaceuticals</p>
+                                                <p class="text-muted mb-1 text-truncate">Farmaceuticos</p>
                                             </div>
                                         </div>
                                     </div> <!-- end row-->
@@ -159,7 +159,7 @@
                                             <div class="col-6">
                                                 <div class="text-right">
                                                     <h3 class="text-dark mt-1"></span></h3>
-                                                    <p class="text-muted mb-1 text-truncate">My Profile</p>
+                                                    <p class="text-muted mb-1 text-truncate">Mi perfil</p>
                                                 </div>
                                             </div>
                                         </div> <!-- end row-->
@@ -182,7 +182,7 @@
                                             <div class="col-6">
                                                 <div class="text-right">
                                                     <h3 class="text-dark mt-1"></span></h3>
-                                                    <p class="text-muted mb-1 text-truncate">My Payroll</p>
+                                                    <p class="text-muted mb-1 text-truncate">Mis pagos</p>
                                                 </div>
                                             </div>
                                         </div> <!-- end row-->
@@ -198,20 +198,20 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="card-box">
-                                    <h4 class="header-title mb-3">Patients</h4>
+                                    <h4 class="header-title mb-3">Pacientes</h4>
 
                                     <div class="table-responsive">
                                         <table class="table table-borderless table-hover table-centered m-0">
 
                                             <thead class="thead-light">
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Address</th>
-                                                    <th>Mobile Phone</th>
-                                                    <th>Category</th>
-                                                    <th>Ailment</th>
-                                                    <th>Age</th>
-                                                    <th>Action</th>
+                                                    <th>Nombre</th>
+                                                    <th>Direccion</th>
+                                                    <th>Numero de telefono</th>
+                                                    <th>Categoria</th>
+                                                    <th>Enfermedad</th>
+                                                    <th>Edad</th>
+                                                    <th>Accion</th>
                                                 </tr>
                                             </thead>
                                             <?php
@@ -243,10 +243,10 @@
                                                         <?php echo $row->pat_ailment;?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row->pat_age;?> Years
+                                                        <?php echo $row->pat_age;?> Años
                                                     </td>
                                                     <td>
-                                                        <a href="his_doc_view_single_patient.php?pat_id=<?php echo $row->pat_id;?>&&pat_number=<?php echo $row->pat_number;?>&&pat_name=<?php echo $row->pat_fname;?>_<?php echo $row->pat_lname;?>" class="btn btn-xs btn-success"><i class="mdi mdi-eye"></i> View</a>
+                                                        <a href="his_doc_view_single_patient.php?pat_id=<?php echo $row->pat_id;?>&&pat_number=<?php echo $row->pat_number;?>&&pat_name=<?php echo $row->pat_fname;?>_<?php echo $row->pat_lname;?>" class="btn btn-xs btn-success"><i class="mdi mdi-eye"></i> Ver</a>
                                                     </td>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
                                                 </tr>
                                             </tbody>
@@ -282,7 +282,7 @@
                 <a href="javascript:void(0);" class="right-bar-toggle float-right">
                     <i class="dripicons-cross noti-icon"></i>
                 </a>
-                <h5 class="m-0 text-white">Settings</h5>
+                <h5 class="m-0 text-white">Ajustes</h5>
             </div>
             <div class="slimscroll-menu">
                 <!-- User box -->
@@ -292,79 +292,79 @@
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
-                    <h5><a href="javascript: void(0);">Geneva Kennedy</a> </h5>
-                    <p class="text-muted mb-0"><small>Admin Head</small></p>
+                    <h5><a href="javascript: void(0);">Tosho</a> </h5>
+                    <p class="text-muted mb-0"><small>Admin</small></p>
                 </div>
 
                 <!-- Settings -->
                 <hr class="mt-0" />
-                <h5 class="pl-3">Basic Settings</h5>
+                <h5 class="pl-3">Ajustes basicos</h5>
                 <hr class="mb-0" />
 
                 <div class="p-3">
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox1" type="checkbox" checked>
                         <label for="Rcheckbox1">
-                            Notifications
+                            Notificaciones
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox2" type="checkbox" checked>
                         <label for="Rcheckbox2">
-                            API Access
+                            Acceso API
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox3" type="checkbox">
                         <label for="Rcheckbox3">
-                            Auto Updates
+                            Actualizacion : automatico
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-2">
                         <input id="Rcheckbox4" type="checkbox" checked>
                         <label for="Rcheckbox4">
-                            Online Status
+                            Estado : private
                         </label>
                     </div>
                     <div class="checkbox checkbox-primary mb-0">
                         <input id="Rcheckbox5" type="checkbox" checked>
                         <label for="Rcheckbox5">
-                            Auto Payout
+                            Pagos : automatico
                         </label>
                     </div>
                 </div>
 
                 <!-- Timeline -->
                 <hr class="mt-0" />
-                <h5 class="px-3">Messages <span class="float-right badge badge-pill badge-danger">25</span></h5>
+                <h5 class="px-3">Mensajes <span class="float-right badge badge-pill badge-danger">25</span></h5>
                 <hr class="mb-0" />
                 <div class="p-3">
                     <div class="inbox-widget">
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-2.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
-                            <p class="inbox-item-text">I've finished it! See you so...</p>
+                            <p class="inbox-item-text">¡Lo he terminado! Nos vemos así...</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
+                            <p class="inbox-item-text">Este tema es asombroso!</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
-                            <p class="inbox-item-text">Nice to meet you</p>
+                            <p class="inbox-item-text">Gusto conocerte</p>
                         </div>
 
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
-                            <p class="inbox-item-text">Hey! there I'm available...</p>
+                            <p class="inbox-item-text">Hey! Ahi estoy disponible!</p>
                         </div>
                         <div class="inbox-item">
                             <div class="inbox-item-img"><img src="assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
+                            <p class="inbox-item-text">Este tema es asombroso!</p>
                         </div>
                     </div> <!-- end inbox-widget -->
                 </div> <!-- end .p-3-->

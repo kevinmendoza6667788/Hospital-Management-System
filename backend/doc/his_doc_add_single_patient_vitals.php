@@ -78,12 +78,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratory</a></li>
-                                                <li class="breadcrumb-item active">Capture Vitals</li>
+                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Laboratorio</a></li>
+                                                <li class="breadcrumb-item active">Guardar vitales</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Capture <?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?> Vitals</h4>
+                                        <h4 class="page-title">Guardar Vitales : <?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?></h4>
                                     </div>
                                 </div>
                             </div>     
@@ -93,18 +93,18 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Completar los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre paciente</label>
                                                         <input type="text" required="required" readonly name="" value="<?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?>" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Ailment</label>
+                                                        <label for="inputPassword4" class="col-form-label">Enfermedad paciente</label>
                                                         <input required="required" type="text" readonly name="" value="<?php echo $row->pat_ailment;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -113,7 +113,7 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-12">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Number</label>
+                                                        <label for="inputEmail4" class="col-form-label">ID paciente</label>
                                                         <input type="text" required="required" readonly name="vit_pat_number" value="<?php echo $row->pat_number;?>" class="form-control" id="inputEmail4" placeholder="DD/MM/YYYY">
                                                     </div>
 
@@ -130,7 +130,7 @@
                                                             $length = 5;    
                                                             $vit_no =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                         ?>
-                                                        <label for="inputZip" class="col-form-label">Vital Number</label>
+                                                        <label for="inputZip" class="col-form-label">Numero vital</label>
                                                         <input type="text" name="vit_number" value="<?php echo $vit_no;?>" class="form-control" id="inputZip">
                                                     </div>
                                                 </div>
@@ -138,17 +138,17 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Body Temperature °C</label>
+                                                        <label for="inputEmail4" class="col-form-label">Temperatura corporal paciente °C</label>
                                                         <input type="text" required="required"  name="vit_bodytemp"class="form-control" id="inputEmail4" placeholder="°C">
                                                     </div>
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Heart Pulse/Beat BPM</label>
+                                                        <label for="inputPassword4" class="col-form-label">Pulso corazon paciente/BPM</label>
                                                         <input required="required" type="text"  name="vit_heartpulse"  class="form-control"  id="inputPassword4" placeholder="HeartBeats Per Minute ">
                                                     </div>
 
                                                     <div class="form-group col-md-3">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Respiratory Rate bpm</label>
+                                                        <label for="inputPassword4" class="col-form-label">Tasa de respiracion paciente/bpm</label>
                                                         <input required="required" type="text"  name="vit_resprate"  class="form-control"  id="inputPassword4" placeholder="Breathes Per Minute">
                                                     </div>
 
@@ -159,7 +159,7 @@
 
                                                 </div>
 
-                                                <button type="submit" name="add_patient_vitals" class="ladda-button btn btn-success" data-style="expand-right">Add Vitals</button>
+                                                <button type="submit" name="add_patient_vitals" class="ladda-button btn btn-success" data-style="expand-right">Agregar vitales</button>
 
                                             </form>
                                             <!--End Patient Form-->

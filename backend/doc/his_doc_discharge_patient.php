@@ -60,12 +60,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Patients</a></li>
-                                            <li class="breadcrumb-item active">Discharge Patients</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pacientes</a></li>
+                                            <li class="breadcrumb-item active">Descargar pacientes</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Discharge Patients</h4>
+                                    <h4 class="page-title">Descargar pacientes</h4>
                                 </div>
                             </div>
                         </div>     
@@ -80,10 +80,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostar todo</option>
+                                                        <option value="Discharged">Descargar</option>
+                                                        <option value="OutPatients">Pacientes/salida</option>
+                                                        <option value="InPatients">Pacientes/entrada</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -98,11 +98,11 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Patient Address</th>
-                                                <th data-hide="phone">Patient Category</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre paciente</th>
+                                                <th data-hide="phone">Numero paciente</th>
+                                                <th data-hide="phone">Direccion paciente</th>
+                                                <th data-hide="phone">Categoria paciente</th>
+                                                <th data-hide="phone">Accion</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -129,7 +129,7 @@
                                                     <td><?php echo $row->pat_type;?></td>
                                                     
                                                     <td>
-                                                        <a href="his_doc_discharge_single_patient.php?pat_number=<?php echo $row->pat_id;?>" class="badge badge-primary"><i class="mdi mdi-check-box-outline "></i> Discharge</a>
+                                                        <a href="his_doc_discharge_single_patient.php?pat_number=<?php echo $row->pat_id;?>" class="badge badge-primary"><i class="mdi mdi-check-box-outline "></i> Descargar</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

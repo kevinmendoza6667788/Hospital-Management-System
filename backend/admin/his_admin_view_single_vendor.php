@@ -50,9 +50,9 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Vendors</a></li>
-                                                <li class="breadcrumb-item active">Manage Vendors</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Proveedor</a></li>
+                                                <li class="breadcrumb-item active">Administrar proveedor</li>
                                             </ol>
                                         </div>
                                         <h4 class="page-title">#<?php echo $row->v_number;?></h4>
@@ -77,16 +77,16 @@
                                             </div> <!-- end col -->
                                             <div class="col-xl-7">
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Vendor Name : <?php echo $row->v_name;?></h2>
+                                                    <h2 class="mb-3">Nombre proveedor : <?php echo $row->v_name;?></h2>
                                                     <hr>
-                                                    <h3 class="text-danger">Vendor Contacts : <?php echo $row->v_phone;?></h3>
+                                                    <h3 class="text-danger">Contactos proveedor : <?php echo $row->v_phone;?></h3>
                                                     <hr>
-                                                    <h3 class="text-danger ">Vendor Email : <?php echo $row->v_email;?></h3>
+                                                    <h3 class="text-danger ">Direccion proveedor : <?php echo $row->v_email;?></h3>
                                                     <hr>
-                                                    <h3 class="text-danger ">Vendor Address : <?php echo $row->v_adr;?></h3>
+                                                    <h3 class="text-danger ">Direccion proveedor : <?php echo $row->v_adr;?></h3>
                                                     <hr>
                                                     
-                                                    <h2 class="align-centre">Vendor Details</h2>
+                                                    <h2 class="align-centre">Detalles proveedor</h2>
                                                     <hr>
                                                     <p class="text-muted mb-4">
                                                         <?php echo $row->v_desc;?>

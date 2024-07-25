@@ -76,9 +76,9 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Manage Pharmaceutical Category</li>
+                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Farmaceuticos</a></li>
+                                            <li class="breadcrumb-item active">Administrar categoria farmaceutica</li>
                                         </ol>
                                     </div>
                                     <h4 class="page-title"><?php echo $row->pharm_cat_name;?></h4>
@@ -91,26 +91,26 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Completar los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row" >
                                                 <div class="form-group col-md-6" style="display:none">
-                                                    <label for="inputEmail4" class="col-form-label">Pharmaceutical Category Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre categoria farmaco</label>
                                                     <input  type="text" value="<?php echo $row->pharm_cat_name;?>" required="required" name="pharm_cat_name" class="form-control" id="inputEmail4" >
                                                 </div>
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputPassword4" class="col-form-label">Pharmaceutical Category Vendor</label>
+                                                    <label for="inputPassword4" class="col-form-label">Proveedor categoria farmaco</label>
                                                     <input required="required" value="<?php echo $row->pharm_cat_vendor;?>" type="text" name="pharm_cat_vendor" class="form-control"  id="inputPassword4">
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Pharmaceutical Category Description</label>
+                                                <label for="inputAddress" class="col-form-label">Descripcion categoria farmaco</label>
                                                 <textarea required="required" type="text" class="form-control" name="pharm_cat_desc" id="editor"><?php echo $row->pharm_cat_desc;?></textarea>
                                             </div>
 
-                                           <button type="submit" name="update_pharmaceutical_category" class="ladda-button btn btn-danger" data-style="expand-right">Update Category</button>
+                                           <button type="submit" name="update_pharmaceutical_category" class="ladda-button btn btn-danger" data-style="expand-right">Actualizar categoria</button>
 
                                         </form>
                                      

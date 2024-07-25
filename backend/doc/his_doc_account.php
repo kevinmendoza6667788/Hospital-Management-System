@@ -54,12 +54,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Profile</a></li>
-                                            <li class="breadcrumb-item active">View My Profile</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Perfil</a></li>
+                                            <li class="breadcrumb-item active">Ver mi perfil</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?>'s Profile</h4>
+                                    <h4 class="page-title"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?> Perfil</h4>
                                 </div>
                             </div>
                         </div>
@@ -74,10 +74,10 @@
                                     
                                     <div class="text-centre mt-3">
                                         
-                                        <p class="text-muted mb-2 font-13"><strong>Employee Full Name :</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
-                                       <p class="text-muted mb-2 font-13"><strong>Employee Department :</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Employee Number :</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Employee Email :</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Nombre Empleado :</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
+                                       <p class="text-muted mb-2 font-13"><strong>Departamento Empleado :</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>ID de Empleado :</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Email de Empleado :</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
 
 
                                     </div>
@@ -91,11 +91,11 @@
                                     <table class="table table-borderless mb-0">
                                         <thead class="thead-light">
                                             <tr>
-                                                <th>Body Temperature</th>
-                                                <th>Heart Rate/Pulse</th>
-                                                <th>Respiratory Rate</th>
-                                                <th>Blood Pressure</th>
-                                                <th>Date Recorded</th>
+                                                <th>Temperatura de cuerpo</th>
+                                                <th>Tasa de respiracion</th>
+                                                <th>Pulsaciones / minuto</th>
+                                                <th>Presion arterial</th>
+                                                <th>Fecha</th>
                                             </tr>
                                         </thead>
                                         <?php

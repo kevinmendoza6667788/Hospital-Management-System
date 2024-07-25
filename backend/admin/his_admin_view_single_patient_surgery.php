@@ -51,9 +51,9 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Surgery</a></li>
-                                                <li class="breadcrumb-item active">View Single Records</li>
+                                                <li class="breadcrumb-item"><a href="his_admin_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Cirugia</a></li>
+                                                <li class="breadcrumb-item active">Ver registros personales</li>
                                             </ol>
                                         </div>
                                         <h4 class="page-title">#<?php echo $row->s_number;?></h4>
@@ -79,17 +79,17 @@
                                             <div class="col-xl-7">
                                             
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Patient's Name : <?php echo $row->s_pat_name;?></h2>
+                                                    <h2 class="mb-3">Nombre de paciente : <?php echo $row->s_pat_name;?></h2>
                                                     <hr>
-                                                    <h3 class="align-centre ">Patient Number : <?php echo $row->s_pat_number;?></h3>
+                                                    <h3 class="align-centre ">Numero de paciente : <?php echo $row->s_pat_number;?></h3>
                                                     <hr>
-                                                    <h3 class="align-centre ">Patient Ailment : <?php echo $row->s_pat_ailment;?></h3>
+                                                    <h3 class="align-centre ">Enfermedad de paciente : <?php echo $row->s_pat_ailment;?></h3>
                                                     <hr>
-                                                    <h3 class="align-centre ">Date Surgery Conducted : <?php echo date("d/m/Y", strtotime($mysqlDateTime));?></h3>
+                                                    <h3 class="align-centre ">Fecha de Cirugia : <?php echo date("d/m/Y", strtotime($mysqlDateTime));?></h3>
                                                     <hr>
-                                                    <h2 class="align-centre">Surgeon :  <?php echo $row->s_doc;?> </h2>
+                                                    <h2 class="align-centre">Cirugia :  <?php echo $row->s_doc;?> </h2>
                                                     <hr>
-                                                    <h2 class="align-centre">Surgery Status : <span class ="btn btn-success"> <?php echo $row->s_pat_status;?></span> </h2>
+                                                    <h2 class="align-centre">Estado de cirugia : <span class ="btn btn-success"> <?php echo $row->s_pat_status;?></span> </h2>
                                                     <hr>
                                                     
                                                     

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Page Title -->
-    <title>Hospital Management System</title>
+    <title>Gestión de Sistema Hospitalario</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
     <!-- CSS Files -->
@@ -34,9 +34,9 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="index.php">Home</a></li>
-                        <li><a href="backend/doc/index.php">Doctor's Login</a></li>
-                        <li><a href="backend/admin/index.php">Administrator Login</a></li>
+                        <li class="menu-active"><a href="index.php">Inicio</a></li>
+                        <li><a href="backend/doc/index.php">Doctor Login</a></li>
+                        <li><a href="backend/admin/index.php">Administrador Login</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->		    		
                 </div>
@@ -49,9 +49,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h4>Caring for better life</h4>
-                    <h1>Leading the way in medical excellence</h1>
-                    <p>HMS is awarded as one of the Top Hospital Management System, which can integrate all the HIS systems, processes and machines into an intelligent information system to derive operational efficiency and assist hospitals in decision making process through MIS and Analytics.</p>
+                    <h4>Cuidando una vida mejor</h4>
+                    <h1>Liderando el camino en la excelencia médica</h1>
+                    <p>HMS recibe el premio como uno de los mejores sistemas de gestión hospitalaria, que puede integrar todos los sistemas, procesos y máquinas de HIS en un sistema de información inteligente para obtener eficiencia operativa y ayudar a los hospitales en el proceso de toma de decisiones a través de MIS y análisis..</p>
                 </div>
             </div>
         </div>
