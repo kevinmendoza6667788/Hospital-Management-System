@@ -35,7 +35,7 @@
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="index.php">Home</a></li>
                         <li><a href="backend/doc/index.php">Login Doctor</a></li>
-                        <li><a href="backend/admin/index.php">Login Administrador/a></li>
+                        <li><a href="backend/admin/index.php">Login Administrador</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->		    		
                 </div>
