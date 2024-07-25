@@ -78,12 +78,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmacy</a></li>
-                                                <li class="breadcrumb-item active">Add Prescription</li>
+                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Farmacia</a></li>
+                                                <li class="breadcrumb-item active">Agregar preescripcion</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Add Patient Prescription</h4>
+                                        <h4 class="page-title">Agregar preescripcion de pacientes</h4>
                                     </div>
                                 </div>
                             </div>     
@@ -93,18 +93,18 @@
                                 <div class="col-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h4 class="header-title">Fill all fields</h4>
+                                            <h4 class="header-title">Completar los campos</h4>
                                             <!--Add Patient Form-->
                                             <form method="post">
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Name</label>
+                                                        <label for="inputEmail4" class="col-form-label">Nombre paciente</label>
                                                         <input type="text" required="required" readonly name="pres_pat_name" value="<?php echo $row->pat_fname;?> <?php echo $row->pat_lname;?>" class="form-control" id="inputEmail4" placeholder="Patient's First Name">
                                                     </div>
 
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Age</label>
+                                                        <label for="inputPassword4" class="col-form-label">Edad paciente</label>
                                                         <input required="required" type="text" readonly name="pres_pat_age" value="<?php echo $row->pat_age;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Last Name">
                                                     </div>
 
@@ -113,24 +113,24 @@
                                                 <div class="form-row">
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputEmail4" class="col-form-label">Patient Number</label>
+                                                        <label for="inputEmail4" class="col-form-label">Numero paciente</label>
                                                         <input type="text" required="required" readonly name="pres_pat_number" value="<?php echo $row->pat_number;?>" class="form-control" id="inputEmail4" placeholder="DD/MM/YYYY">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Address</label>
+                                                        <label for="inputPassword4" class="col-form-label">Direccion paciente</label>
                                                         <input required="required" type="text" readonly name="pres_pat_addr" value="<?php echo $row->pat_addr;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                     </div>
 
                                                     <div class="form-group col-md-4">
-                                                        <label for="inputPassword4" class="col-form-label">Patient Type</label>
+                                                        <label for="inputPassword4" class="col-form-label">Tipo de paciente</label>
                                                         <input required="required" readonly type="text" name="pres_pat_type" value="<?php echo $row->pat_type;?>" class="form-control"  id="inputPassword4" placeholder="Patient`s Age">
                                                     </div>
 
                                                 </div>
 
                                                 <div class="form-group ">
-                                                        <label for="inputCity" class="col-form-label">Patient Ailment</label>
+                                                        <label for="inputCity" class="col-form-label">Enfermedad de paciente</label>
                                                         <input required="required" type="text" value="<?php echo $row->pat_ailment;?>" name="pres_pat_ailment" class="form-control" id="inputCity">
                                                 </div>
                                                 <hr>
@@ -142,17 +142,17 @@
                                                             $length = 5;    
                                                             $pres_no =  substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'),1,$length);
                                                         ?>
-                                                        <label for="inputZip" class="col-form-label">Prescription Number</label>
+                                                        <label for="inputZip" class="col-form-label">ID Preescripcion</label>
                                                         <input type="text" name="pres_number" value="<?php echo $pres_no;?>" class="form-control" id="inputZip">
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Prescription</label>
+                                                        <label for="inputAddress" class="col-form-label">Prescripcion</label>
                                                         <textarea required="required"  type="text" class="form-control" name="pres_ins" id="editor"></textarea>
                                                 </div>
 
-                                                <button type="submit" name="add_patient_presc" class="ladda-button btn btn-primary" data-style="expand-right">Add Patient Prescription</button>
+                                                <button type="submit" name="add_patient_presc" class="ladda-button btn btn-primary" data-style="expand-right">Agregar preescripcion de paciente</button>
 
                                             </form>
                                             <!--End Patient Form-->

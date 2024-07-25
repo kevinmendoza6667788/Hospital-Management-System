@@ -51,9 +51,9 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                                <li class="breadcrumb-item active">View Pharmaceuticals</li>
+                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Farmaceuticos</a></li>
+                                                <li class="breadcrumb-item active">Ver farmaceuticos</li>
                                             </ol>
                                         </div>
                                         <h4 class="page-title">#<?php echo $row->phar_bcode;?> - <?php echo $row->phar_name;?></h4>
@@ -78,13 +78,13 @@
                                             </div> <!-- end col -->
                                             <div class="col-xl-7">
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Pharmaceutical Name : <?php echo $row->phar_name;?></h2>
+                                                    <h2 class="mb-3">Nombre farmaceutico : <?php echo $row->phar_name;?></h2>
                                                     <hr>
-                                                    <h4 class="text-danger">Pharmaceutical Vendor : <?php echo $row->phar_vendor;?></h4>
+                                                    <h4 class="text-danger">Proveedor famaceutico : <?php echo $row->phar_vendor;?></h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Pharmaceutical Quantity : <?php echo $row->phar_qty;?> Cartons</h4>
+                                                    <h4 class="text-danger">Cantidad farmaceutico: <?php echo $row->phar_qty;?> cartones</h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Pharmaceutical Description</h4>
+                                                    <h4 class="text-danger">Descripcion farmaceutico</h4>
 
                                                     <p class="text-muted mb-4">
                                                         <?php echo $row->phar_desc;?>

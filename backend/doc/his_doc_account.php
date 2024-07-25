@@ -54,12 +54,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Tablero</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Perfil</a></li>
                                             <li class="breadcrumb-item active">Ver mi perfil</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?>'s Perfil</h4>
+                                    <h4 class="page-title"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?> Perfil</h4>
                                 </div>
                             </div>
                         </div>
@@ -70,10 +70,12 @@
                                     <img src="../doc/assets/images/users/<?php echo $row->doc_dpic;?>" class="rounded-circle avatar-lg img-thumbnail" alt="imagen de perfil">
 
                                     <div class="text-centre mt-3">
-                                        <p class="text-muted mb-2 font-13"><strong>Nombre Completo del Empleado:</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Departamento del Empleado:</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Número del Empleado:</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
-                                        <p class="text-muted mb-2 font-13"><strong>Email del Empleado:</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
+                                     
+                                        <p class="text-muted mb-2 font-13"><strong>Nombre Empleado :</strong> <span class="ml-2"><?php echo $row->doc_fname;?> <?php echo $row->doc_lname;?></span></p>
+                                       <p class="text-muted mb-2 font-13"><strong>Departamento Empleado :</strong> <span class="ml-2"><?php echo $row->doc_dept;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>ID de Empleado :</strong> <span class="ml-2"><?php echo $row->doc_number;?></span></p>
+                                        <p class="text-muted mb-2 font-13"><strong>Email de Empleado :</strong> <span class="ml-2"><?php echo $row->doc_email;?></span></p>
+                                      
                                     </div>
                                 </div> <!-- end card-box -->
                             </div> <!-- end col-->

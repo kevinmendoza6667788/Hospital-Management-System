@@ -50,9 +50,9 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                                <li class="breadcrumb-item active">View Pharmaceuticals Categories</li>
+                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Farmaceuticos</a></li>
+                                                <li class="breadcrumb-item active">Ver Categorias Farmaceuticas</li>
                                             </ol>
                                         </div>
                                         <h4 class="page-title"></h4>
@@ -77,9 +77,9 @@
                                             </div> <!-- end col -->
                                             <div class="col-xl-7">
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Pharmaceutical Name: <?php echo $row->pharm_cat_name;?></h2>
+                                                    <h2 class="mb-3">Nombre farmaceutico: <?php echo $row->pharm_cat_name;?></h2>
                                                     <hr>
-                                                    <h6 class="text-danger">Phrmaceutical Vendor<?php echo $row->pharm_cat_vendor;?></h6>
+                                                    <h6 class="text-danger">Proveedor farmaceutico<?php echo $row->pharm_cat_vendor;?></h6>
                                                     <hr>
                                                     <p class="text-muted mb-4">
                                                         <?php echo $row->pharm_cat_desc;?>

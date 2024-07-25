@@ -62,12 +62,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Manage Pharmaceuticals</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Farmaceuticos</a></li>
+                                            <li class="breadcrumb-item active">Administrar farmacos</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Manage Pharmaceuticals </h4>
+                                    <h4 class="page-title">Administrar farmacos </h4>
                                 </div>
                             </div>
                         </div>     
@@ -82,10 +82,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargar</option>
+                                                        <option value="OutPatients">Pacientes/salida</option>
+                                                        <option value="InPatients">Pacientes/entrada</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -100,12 +100,12 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true"> Name</th>
-                                                <th data-hide="phone">Barcode</th>
-                                                <th data-hide="phone">Vendor</th>
-                                                <th data-hide="phone">Category</th>
-                                                <th data-hide="phone">Quantity</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true"> Nombre</th>
+                                                <th data-hide="phone">Codigo de barras</th>
+                                                <th data-hide="phone">Proveedor</th>
+                                                <th data-hide="phone">Categoria</th>
+                                                <th data-hide="phone">Cantidad</th>
+                                                <th data-hide="phone">Accion</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -131,8 +131,8 @@
                                                     <td><?php echo $row->phar_cat;?></td>
                                                     <td><?php echo $row->phar_qty;?> Cartons</td>
                                                     <td>
-                                                        <a href="his_doc_view_single_pharm.php?phar_bcode=<?php echo $row->phar_bcode;?>" class="badge badge-success"><i class="far fa-eye "></i> View</a>
-                                                        <a href="his_doc_update_single_pharm.php?phar_bcode=<?php echo $row->phar_bcode;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Update</a>
+                                                        <a href="his_doc_view_single_pharm.php?phar_bcode=<?php echo $row->phar_bcode;?>" class="badge badge-success"><i class="far fa-eye "></i> Ver</a>
+                                                        <a href="his_doc_update_single_pharm.php?phar_bcode=<?php echo $row->phar_bcode;?>" class="badge badge-warning"><i class="fas fa-clipboard-check "></i> Actualizar</a>
                                                         <!--<a href="his_admin_manage_pharmaceuticals.php?delete_pharm_name=<?php echo $row->phar_id;?>" class="badge badge-danger"><i class="fas fa-trash-alt"></i> Delete</a>-->
 
                                                     </td>

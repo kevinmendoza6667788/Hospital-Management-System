@@ -65,12 +65,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Payroll</a></li>
-                                            <li class="breadcrumb-item active">View Payroll</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pagos</a></li>
+                                            <li class="breadcrumb-item active">Ver pagos</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">My Payrolls</h4>
+                                    <h4 class="page-title">Mis pagos</h4>
                                 </div>
                             </div>
                         </div>     
@@ -85,10 +85,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargar</option>
+                                                        <option value="OutPatients">Pacientes/salida</option>
+                                                        <option value="InPatients">Pacientes/entrada</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -103,11 +103,11 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">My Name</th>
-                                                <th data-toggle="true">My Number</th>
-                                                <th data-hide="phone">Payroll Number</th>
-                                                <th data-hide="phone">My Salary</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Mi nombre</th>
+                                                <th data-toggle="true">Mi numero</th>
+                                                <th data-hide="phone">Numero de pago</th>
+                                                <th data-hide="phone">Mi salario</th>
+                                                <th data-hide="phone">Accion</th>
                                             </tr>
                                             </thead>
                                             <?php
@@ -132,7 +132,7 @@
                                                  
                                                     <td>
                                                         <!--<a href="his_admin_manage_payrolls.php?delete_pay_number=<?php echo $row->pay_number;?>" class="badge badge-danger"><i class="fas fa-trash"></i> Delete</a>-->
-                                                        <a href="his_doc_view_single_payroll.php?pay_number=<?php echo $row->pay_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> View | Print Payroll</a>
+                                                        <a href="his_doc_view_single_payroll.php?pay_number=<?php echo $row->pay_number;?>" class="badge badge-success"><i class="fas fa-eye"></i> Ver | Imprimir Pago</a>
 
                                                     </td>
                                                 </tr>

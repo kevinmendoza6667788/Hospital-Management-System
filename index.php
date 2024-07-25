@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required Meta Tags -->
@@ -49,8 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h4>
-                    Cuidando una vida mejor</h4>
+                    <h4>Cuidando una vida mejor</h4>
                     <h1>Liderando el camino en la excelencia médica</h1>
                     <p>HMS recibe el premio como uno de los mejores sistemas de gestión hospitalaria, que puede integrar todos los sistemas, procesos y máquinas de HIS en un sistema de información inteligente para obtener eficiencia operativa y ayudar a los hospitales en el proceso de toma de decisiones a través de MIS y análisis.</p>
                 </div>

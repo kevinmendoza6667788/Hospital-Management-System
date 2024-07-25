@@ -50,12 +50,12 @@
                                     <div class="page-title-box">
                                         <div class="page-title-right">
                                             <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Inventory</a></li>
-                                                <li class="breadcrumb-item active">Equipments | Assets</li>
+                                                <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Inventario</a></li>
+                                                <li class="breadcrumb-item active">Equios|activos</li>
                                             </ol>
                                         </div>
-                                        <h4 class="page-title">Equipment #<?php echo $row->eqp_code;?> Details</h4>
+                                        <h4 class="page-title"> Detalles de equipos #<?php echo $row->eqp_code;?></h4>
                                     </div>
                                 </div>
                             </div>     
@@ -77,17 +77,17 @@
                                             </div> <!-- end col -->
                                             <div class="col-xl-7">
                                                 <div class="pl-xl-3 mt-3 mt-xl-0">
-                                                    <h2 class="mb-3">Equipment Name : <?php echo $row->eqp_name;?></h2>
+                                                    <h2 class="mb-3">Nombre de equipo : <?php echo $row->eqp_name;?></h2>
                                                     <hr>
-                                                    <h4 class="text-danger">Equipment Vendor: <?php echo $row->eqp_vendor;?></h4>
+                                                    <h4 class="text-danger">Proveedor de equipo: <?php echo $row->eqp_vendor;?></h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Equipment Barcode: <?php echo $row->eqp_code;?></h4>
+                                                    <h4 class="text-danger">Codigo de barra de equipo: <?php echo $row->eqp_code;?></h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Equipment(s) Available : <?php echo $row->eqp_qty;?></h4>
+                                                    <h4 class="text-danger">Equipos disponibles : <?php echo $row->eqp_qty;?></h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Equipment Status : <?php echo $row->eqp_status;?></h4>
+                                                    <h4 class="text-danger">Estado de equipo : <?php echo $row->eqp_status;?></h4>
                                                     <hr>
-                                                    <h4 class="text-danger">Equipment Description</h4>
+                                                    <h4 class="text-danger">Descripcion de equipo</h4>
                                                     <p class="text-muted mb-4">
                                                         <?php echo $row->eqp_desc;?>
                                                     </p>

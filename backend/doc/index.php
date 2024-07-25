@@ -33,7 +33,7 @@
     
 <head>
         <meta charset="utf-8" />
-        <title>Hospital Management System -A Super Responsive Information System</title>
+        <title>Gestión de Sistema Hospitalario</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="" name="description" />
         <meta content="" name="MartDevelopers" />
@@ -91,23 +91,23 @@
                                     <a href="index.php">
                                         <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
                                     </a>
-                                    <p class="text-muted mb-4 mt-3">Enter your email address and password to access Doctor panel.</p>
+                                    <p class="text-muted mb-4 mt-3">Ingrese su dirección de correo electrónico y contraseña para acceder al panel Doctor.</p>
                                 </div>
 
                                 <form method='post' >
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Doctor Number</label>
+                                        <label for="emailaddress">ID Doctor</label>
                                         <input class="form-control" name="doc_number" type="text" id="emailaddress" required="" placeholder="Enter your doctor number">
                                     </div>
 
                                     <div class="form-group mb-3">
-                                        <label for="password">Password</label>
+                                        <label for="password">Contraseña</label>
                                         <input class="form-control" name="doc_pwd" type="password" required="" id="password" placeholder="Enter your password">
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-success btn-block" name="doc_login" type="submit"> Log In </button>
+                                        <button class="btn btn-success btn-block" name="doc_login" type="submit"> Ingresar </button>
                                     </div>
 
                                 </form>
@@ -140,7 +140,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p> <a href="his_doc_reset_pwd.php" class="text-white-50 ml-1">Forgot your password?</a></p>
+                                <p> <a href="his_doc_reset_pwd.php" class="text-white-50 ml-1">¿Olvidaste tu contraseña?</a></p>
                                <!-- <p class="text-white-50">Don't have an account? <a href="his_admin_register.php" class="text-white ml-1"><b>Sign Up</b></a></p>-->
                             </div> <!-- end col -->
                         </div>

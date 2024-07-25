@@ -40,12 +40,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmacy</a></li>
-                                            <li class="breadcrumb-item active">Give Prescription</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Farmacia</a></li>
+                                            <li class="breadcrumb-item active">Dar descripcion</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Add Prescriptions</h4>
+                                    <h4 class="page-title">Agregar preescripcion</h4>
                                 </div>
                             </div>
                         </div>     
@@ -60,10 +60,10 @@
                                             <div class="col-12 text-sm-center form-inline" >
                                                 <div class="form-group mr-2" style="display:none">
                                                     <select id="demo-foo-filter-status" class="custom-select custom-select-sm">
-                                                        <option value="">Show all</option>
-                                                        <option value="Discharged">Discharged</option>
-                                                        <option value="OutPatients">OutPatients</option>
-                                                        <option value="InPatients">InPatients</option>
+                                                        <option value="">Mostrar todo</option>
+                                                        <option value="Discharged">Descargado</option>
+                                                        <option value="OutPatients">Pacientes/salida</option>
+                                                        <option value="InPatients">Pacientes/entrada</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
@@ -78,13 +78,13 @@
                                             <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th data-toggle="true">Patient Name</th>
-                                                <th data-hide="phone">Patient Number</th>
-                                                <th data-hide="phone">Patient Address</th>
-                                                <th data-hide="phone">Patient Ailment</th>
-                                                <th data-hide="phone">Patient Age</th>
-                                                <th data-hide="phone">Patient Category</th>
-                                                <th data-hide="phone">Action</th>
+                                                <th data-toggle="true">Nombre paciente</th>
+                                                <th data-hide="phone">Numero paciente</th>
+                                                <th data-hide="phone">Direccion paciente</th>
+                                                <th data-hide="phone">Enfermedad paciente</th>
+                                                <th data-hide="phone">Edad paciente</th>
+                                                <th data-hide="phone">Categoria paciente</th>
+                                                <th data-hide="phone">Accion</th>
                                             </tr>
                                             </thead>
                                             <?php

@@ -66,12 +66,12 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Dashboard</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pharmaceuticals</a></li>
-                                            <li class="breadcrumb-item active">Add Pharmaceutical Category</li>
+                                            <li class="breadcrumb-item"><a href="his_doc_dashboard.php">Panel de Control</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Productos Farmaceuticos</a></li>
+                                            <li class="breadcrumb-item active">Agregar Categoria Farmeceutica</li>
                                         </ol>
                                     </div>
-                                    <h4 class="page-title">Create A Pharmaceutical Category</h4>
+                                    <h4 class="page-title">Crear Categoria Farmaceutica</h4>
                                 </div>
                             </div>
                         </div>     
@@ -81,17 +81,17 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Fill all fields</h4>
+                                        <h4 class="header-title">Complete los campos</h4>
                                         <!--Add Patient Form-->
                                         <form method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4" class="col-form-label">Pharmaceutical Category Name</label>
+                                                    <label for="inputEmail4" class="col-form-label">Nombre Categoria Farmaceutica</label>
                                                     <input type="text" required="required" name="pharm_cat_name" class="form-control" id="inputEmail4" >
                                                 </div>
 
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputState" class="col-form-label">Pharmaceutical Vendor</label>
+                                                    <label for="inputState" class="col-form-label">Proveedor Farmaceutico</label>
                                                     <select id="inputState" required="required" name="pharm_cat_vendor" class="form-control">
                                                     <?php
                                                     
@@ -114,11 +114,11 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="inputAddress" class="col-form-label">Pharmaceutical Category Description</label>
+                                                <label for="inputAddress" class="col-form-label">Descripcion Categoria Farmeceutica</label>
                                                 <textarea required="required" type="text" class="form-control" name="pharm_cat_desc" id="editor"></textarea>
                                             </div>
 
-                                           <button type="submit" name="add_pharmaceutical_category" class="ladda-button btn btn-success" data-style="expand-right">Add Category</button>
+                                           <button type="submit" name="add_pharmaceutical_category" class="ladda-button btn btn-success" data-style="expand-right">Agregar Categoria</button>
 
                                         </form>
                                      
