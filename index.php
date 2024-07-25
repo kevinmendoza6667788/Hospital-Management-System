@@ -51,6 +51,15 @@
                     <h4>Cuidando una vida mejor</h4>
                     <h1>Liderando el camino en la excelencia médica</h1>
                     <p>HMS recibe el premio como uno de los mejores sistemas de gestión hospitalaria, que puede integrar todos los sistemas, procesos y máquinas de HIS en un sistema de información inteligente para obtener eficiencia operativa y ayudar a los hospitales en el proceso de toma de decisiones a través de MIS y análisis.</p>
+                    <h4>Autores-Grupo 6</h4>
+                    <ul>
+                        <li>Gomez Mendoza, Franklin Kevin </li>
+                        <li>Chuquiyauri Gomez, Saulo David </li>
+                        <li>Alvarado Rivera, Abdel</li>
+                        <li>Salazar Guerra, Maycol</li>
+                        <li>Lopez Ayzanoa, Leonardo</li>
+                    </ul>
+                    
                 </div>
             </div>
         </div>
